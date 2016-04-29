@@ -1,0 +1,15 @@
+var school = ['seidenberg','lubin', 'education', 'all'];
+var degree = {'seidenberg': ['phd', 'ms', 'bs', 'ba']
+			  'lubin': ['ms', 'bs', 'ba']};
+
+$.each(degree, function(i){
+	$('#school').append('<li><a href="#">' +school[i]+'</a></li>' );
+});
+
+$('#dropPants').on('click', 'li a', function() {
+  $('#dropPantStyle').html('');
+  var showStyles = pantsStyles[$(this).text()];
+  $.each(showStyles, function(i) {
+    $('#dropPantStyle').append('<li><a href="#">'+showStyles[i]+'</a></li>');
+  });   
+});
