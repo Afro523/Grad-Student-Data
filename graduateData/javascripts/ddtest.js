@@ -69,18 +69,28 @@
         });                                                         // NEW
       })(window.d3);
 
-      $(document).ready(function() {
-
+$(document).ready(function() {
+      //University Choice
     	$("#uniPart").click(function(){
-
-            $("#campusDrop").html("<li><a>All</a></li><li><a>PLV</a></li><li><a>NYC</a></li>");
-
+        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
+      });
+    	
+     $("#uniAll").click(function(){
+        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li>");
     	});
-    	$("#uniAll").click(function(){
 
-            $("#campusDrop").html("<li><a>All</a></li>");
+      //Campus Choice
+      $("#camAll").click(function(){
+        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
+      });
 
-    	});
+      $("#camPLV").click(function(){
+        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
+      });
+
+      $("#camNYC").click(function(){
+        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
+      }); 
 
     $('.dropdown-toggle').dropdown();
 });
