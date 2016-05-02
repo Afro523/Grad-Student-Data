@@ -4,7 +4,7 @@
       <title>Graduate Outcome Data Processing</title>
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -40,6 +40,7 @@
     <!--Real Body Begins -->
     <div class="container-fluid">
         <div class="btn-group-vertical col-md-3 col-xs-3">
+
         <!--Verification DropDown-->
           <div class = "btn-group">
             <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
@@ -53,105 +54,63 @@
                 <li><a>All</a></li>
             </ul>
           </div>
-        <!--University DropDown-->
-          <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                University 
-              <span class = "caret"></span>
-            </button>
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href ="#" selected="" value="base">Select One</a></li>
-                <li><a>Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-          </div>
-          <!--Level Campus-->
-          <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                Campus 
-              <span class = "caret"></span>
-            </button>
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "" selected="" value="base">Select One</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-          </div>
-          <!--Level DropDown-->
-          <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                Level 
-              <span class = "caret"></span>
-            </button>
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "" selected="" value="base">Select One</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-          </div>
-          <!--School DropDown-->
-          <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                School 
-              <span class = "caret"></span>
-            </button>
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "" selected="" value="base">Select One</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-          </div>
-          <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                Major 
-              <span class = "caret"></span>
-            </button>
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "" selected="" value="base">Select One</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-          </div>
+
+
       </div>
+      
       <!--Data Display-->
       <div class="containter col-md-8 col-xs-3">
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th class="text-center">SN</th>
               <th class="text-center">Name</th>
-              <th class="text-center">Location</th>
-              <th class="text-center">Employed</th>
-              <th class="text-center">Employed At</th>
+              <th class="text-center">School</th>
+              <th class="text-center">Major</th>
+              <th class="text-center">Degree</th>
+              <th class="text-center">Campus</th>
+              <th class="text-center">Visa Status</th>
+              <th class="text-center">Primary Status</th>
               <th class="text-center">Salary</th>
+              <th class="text-center">Related to Study</th>
+              <th class="text-center">Employer Category</th>
+              <th class="text-center">Employer Name</th>
+              <th class="text-center">Job Title</th>
+              <th class="text-center">Job Function</th>
+              <th class="text-center">Job Start Date</th>
               <th class="text-center">Verified</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td class="text-center">4890145781</td>
-              <td class="text-center">Doe, John</td>
-              <td class="text-center">NY, NY</td>
-              <td class="text-center">Yes</td>
-              <td class="text-center">IBM</td>
-              <td class="text-center">$50,000</td>
-              <td class="text-center">Yes</td>
+              <?php
+              include('sqlstuff.php');
+              
+              connectToSQL();
+              getStudent();
+
+              ?>
             </tr>
           </tbody>
 
         </table>
+              <div class="btn-group cold-md-3 col-xs-3">
+        <button class="btn btn-primary" >
+          Last
+        </button>
+        <button class="btn btn-primary" >
+          Next
+        </button>
+      </div>
       </div>
       <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
       </nav>
     </div> <!-- /container -->
 
-
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="javascripts/basicJs.js"></script>
-    <script src="javascripts/dynamicDrop.js"></script>
+    <script src="../javascripts/basicJs.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>

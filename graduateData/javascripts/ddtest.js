@@ -28,9 +28,9 @@
           .value(function(d) { return d.count; })
           .sort(null);
 
-        d3.csv('../dataFiles/weekdays.csv', function(error, dataset) {           // NEW
-          dataset.forEach(function(d) {                             // NEW
-            d.count = +d.count;                                     // NEW
+        d3.csv('../dataFiles/weekdays.csv', function(error, dataset) {
+          dataset.forEach(function(d) {
+            d.count = +d.count;
           });                                                       // NEW
 
           var path = svg.selectAll('path')
