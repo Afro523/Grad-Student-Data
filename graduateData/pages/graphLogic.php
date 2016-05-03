@@ -18,7 +18,6 @@ function connectToSQL(){
 }
 
 function getStudent(){
-
 	$mysqli = new mysqli("localhost", "root");
 	$databaseSelect = 'graduateoutcomes';
 	if ($mysqli->connect_errno) {
@@ -31,29 +30,24 @@ function getStudent(){
  		echo "no db";
 	}
 
-	$query = "call getemployedlevel()";
-	$studentOutcome = $mysqli->query($query);
-    //$outRow = $studentOutcome->fetch_array();
-	//create an array
-    $emparray = array();
-    while($row = mysqli_fetch_assoc($studentOutcome))
-    {
-        $emparray[] = $row;
-    }
+	$query = "call getemployedbyschool";
 
-    //write to json file
-    $fp = fopen('../dataFiles/tempdata.json', 'w');
-    fwrite($fp, json_encode($emparray));
-    fclose($fp);
+	$result = mysqli_query($mysqli, $query);
 
-    $fp = fopen('file.csv', 'w');
+	$fp = fopen('../dataFiles/file.csv', 'w');
 
-    while($row = mysqli_fetch_assoc($studentOutcome) ){
-	//foreach ($row as $val) {
-    	fputcsv($fp, $row);
+	//For our d3 we use a csv style of label,count for the pie chart
+	$csvline = "label,count" . PHP_EOL;
+	fwrite($fp, $csvline);
+	while ($row = mysqli_fetch_array($result)){
+
+		$csvline = $row['school'] . "," . $row['COUNT(pkey)']  . PHP_EOL;
+		fwrite($fp, $csvline);
 	}
 
 	fclose($fp);
+
+
     mysqli_close($mysqli);
 /*
     $query = "select * from student";
