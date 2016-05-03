@@ -1,5 +1,5 @@
 //d3 courtesy of Kent English @ zeroviscosity.com
- (function(d3) {
+ (function createGraph(d3) {
         'use strict';
         var width = 360;
         var height = 360;
@@ -112,28 +112,21 @@
             .attr('y', legendRectSize - legendSpacing)
             .text(function(d) { return d; });
         });
-      })(window.d3);
-/*$(document).ready(function() {
-      //University Choice
-    	$("#uniPart").click(function(){
-        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
-      });
-    	
-     $("#uniAll").click(function(){
-        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li>");
-    	});
+        
+      
 
-      //Campus Choice
-      $("#camAll").click(function(){
-        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
-      });
+$(document).ready(function() {
+  $("#campus").click(function(){
+    $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: "campusGraph.php",             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){
 
-      $("#camPLV").click(function(){
-        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
-      });
-
-      $("#camNYC").click(function(){
-        $("#campusDrop").html("<li class=\"camAll\"><a>All</a></li><li class=\"camPLV\"><a>PLV</a></li><li class=\"camNYC\"><a>NYC</a></li>");
-      }); 
-
-    $('.dropdown-toggle').dropdown();*/
+            createGraph();
+            $("#chart").html(response); 
+            //alert(response);
+        }});
+    });   
+  });
+})(window.d3);

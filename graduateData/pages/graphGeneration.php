@@ -22,9 +22,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
               <a type="link" class="btn btn-primary" href="../index.html" role="button">Home</a>
-              <a type="link" class="btn btn-primary" href="dataVerify.html" role="button">Data Editing</a>
+              <a type="link" class="btn btn-primary" href="dataVerify.php" role="button">Data Editing</a>
               <a type="link" class="btn btn-primary" href="#" role="button">Dashboard</a>
-              <a type="link" class="btn btn-primary" href="graphGeneration.html" role="button">Graph Generation</a>
+              <a type="link" class="btn btn-primary" href="graphGeneration.php" role="button">Graph Generation</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -42,42 +42,20 @@
           <div class = "btn-group">
    					<button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
       				School 
-      				<span class = "caret"></span>
    					</button>
-   
-   					<ul class = "dropdown-menu" role = "menu">
-      					<li><a href = "" selected="" value="base">Select One</a></li>
-      					<li><a href = "#">Another action</a></li>
-      					<li><a href = "#">Something else here</a></li>
-  					</ul>
 				  </div>
           <!--Drop2-->
 				  <div class = "btn-group">
 				    <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
 				      Level   
-				      <span class = "caret"></span>
 				   </button>
-	   
-				   	<ul class = "dropdown-menu" role = "menu">
-				      	<li><a href = "#">Action</a></li>
-				      	<li><a href = "#">Another action</a></li>
-				      	<li><a href = "#">Something else here</a></li>
-				   	</ul>
 				   
 				  </div>
           <!--Drop3-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+            <button id="campus" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
               Campus    
-              <span class = "caret"></span>
            </button>
-     
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "#">Action</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-           
           </div>
     		</div>
     		<!--This is to hold the graph generation-->
@@ -85,10 +63,7 @@
 
           <div id="chart"></div>
     
-          <?php 
-            include('graphLogic.php');
-            getStudent();
-          ?>
+          
     		</div>
     	</div>
       <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
