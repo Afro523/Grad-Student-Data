@@ -40,13 +40,11 @@ function getStudent(){
 	$csvline = "label,count" . PHP_EOL;
 	fwrite($fp, $csvline);
 	while ($row = mysqli_fetch_array($result)){
-
 		$csvline = $row['school'] . "," . $row['COUNT(pkey)']  . PHP_EOL;
 		fwrite($fp, $csvline);
 	}
 
 	fclose($fp);
-
 
     mysqli_close($mysqli);
 /*

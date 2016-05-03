@@ -38,18 +38,23 @@ $db = mysqli_select_db ($mysqli, $databaseSelect);
 if (! $db) {
  echo "no db";
 }
-
+    //Data Set of All Students
     $query = "select * from student";
 
     $studentInfo = $mysqli->query($query);
+
     $row = $studentInfo->fetch_array();
 
+    //Each key needs outcomes go and get them!
     $studentKey = $row['pkey'];
 
     $query = "call getoutcome(".$studentKey.")";
     $studentOutcome = $mysqli->query($query);
-    $outRow = $studentOutcome->fetch_array();
+    
 
+    while($row = $studentInfo->fetch_array()){
+        $outRow = $studentOutcome->fetch_array();
+        echo "<tr>";
     echo "<td>" . $row['lastname'] . ", " . $row['firstname'] . " </td>";
     echo "<td>" . $row['school'] . " </td>";
     echo "<td>" . $row['major'] . " </td>";
@@ -65,10 +70,8 @@ if (! $db) {
     echo "<td>" . $row['JOb function'] . " </td>";
     echo "<td>" . $row['strt date'] . " </td>";
     echo "<td>" . $outRow['approved'] . " </td>";
+    echo "</tr>";
 }
-
-//function getOutcome(student){
-//    $indvOutcome = getoutcome(student_pkey);
-//}
+}
 
 ?>

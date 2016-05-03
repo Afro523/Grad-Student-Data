@@ -1,5 +1,4 @@
-
-  //d3 courtesy of Kent English @ zeroviscosity.com
+//d3 courtesy of Kent English @ zeroviscosity.com
  (function(d3) {
         'use strict';
         var width = 360;
