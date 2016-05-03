@@ -49,7 +49,7 @@
             </button>
             <ul class = "dropdown-menu" role = "menu">
                 <li><a selected="" value="base">Select One</a></li>
-                <li><a>Yes</a></li>
+                <li href="#"><a>Yes</a></li>
                 <li><a>No</a></li>
                 <li><a>All</a></li>
             </ul>
@@ -85,8 +85,7 @@
             <tr>
               <?php
               include('sqlstuff.php');
-              
-              connectToSQL();
+              //connectToSQL();
               getStudent();
 
               ?>
