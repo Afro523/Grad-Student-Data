@@ -24,7 +24,7 @@
               <a type="link" class="btn btn-primary" href="../index.html" role="button">Home</a>
               <a type="link" class="btn btn-primary" href="dataVerify.php" role="button">Data Editing</a>
               <a type="link" class="btn btn-primary" href="#" role="button">Dashboard</a>
-              <a type="link" class="btn btn-primary" href="graphGeneration.php" role="button">Graph Generation</a>
+              <a type="link" class="btn btn-primary" href="graphGeneration.html" role="button">Graph Generation</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -34,12 +34,12 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome to CSDMP</h1>
-        <h3>Data Editing & Verification</h3>
+        <h3>Data Editing and Verification</h3>
       </div>
     </div>
     <!--Real Body Begins -->
     <div class="container-fluid">
-        <div class="btn-group-vertical col-md-2 col-xs-2">
+        <div class="btn-group-vertical col-md-3 col-xs-3">
 
         <!--Verification DropDown-->
           <div class = "btn-group">
@@ -87,23 +87,24 @@
               include('sqlstuff.php');
               //connectToSQL();
               getStudent();
+
               ?>
             </tr>
           </tbody>
 
         </table>
-        <div class="btn-group cold-md-3 col-xs-3">
+     <!--         <div class="btn-group cold-md-3 col-xs-3">
         <button class="btn btn-primary" >
           Last
         </button>
         <button class="btn btn-primary" >
           Next
         </button>
+      </div> -->
       </div>
-      </div>
-      <nav class="navbar navbar-default navbar-fixed-bottom">
+     <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
-      </nav>
+      </nav> -->
     </div> <!-- /container -->
 
     <!-- Bootstrap core JavaScript ================================================== -->

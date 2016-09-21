@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="utf-8" />
-    <title>D3.js Step by Step: Step 4 - Loading External Data</title>
+    <meta charset="utf-8">
+    <title>Step 6 - Animating Interactivity</title>
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
     <link data-require="normalize@*" data-semver="3.0.1" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
+      #chart {
+        height: 360px;
+        margin: 0 auto;                                               /* NEW */
+        position: relative;
+        width: 360px;
+      }
+      .tooltip {
+        background: #eee;
+        box-shadow: 0 0 5px #999999;
+        color: #333;
+        display: none;
+        font-size: 12px;
+        left: 130px;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        top: 95px;
+        width: 80px;
+        z-index: 10;
+      }
       .legend {
         font-size: 12px;
       }
       rect {
+        cursor: pointer;                                              /* NEW */
         stroke-width: 2;
       }
+      rect.disabled {                                                 /* NEW */
+        fill: transparent !important;                                 /* NEW */
+      }                                                               /* NEW */
+      h1 {                                                            /* NEW */
+        font-size: 14px;                                              /* NEW */
+        text-align: center;                                           /* NEW */
+      }                                                               /* NEW */
     </style>
   </head>
-
   <body>
-
-    <div class = "btn-group">
-      <button id="university" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-        University 
-        <span class = "caret"></span>
-      </button>
-      <ul id="universityDrop" class="dropdown-menu" role = "menu">
-        <li id="uniAll"><a>All</a></li>
-        <li id="uniPart"><a>Partial</a></li>
-      </ul>
-    </div>
-
-    <div class = "btn-group">
-      <button id="campus" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-        Campus
-        <span class = "caret"></span>
-      </button>
-      <ul id="campusDrop" class="dropdown-menu" role = "menu">
-      </ul>
-    </div>
-
-    <div class = "btn-group">
-      <button id="level" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-        Level
-        <span class = "caret"></span>
-      </button>
-      <ul id="levelDrop" class="dropdown-menu" role = "menu">
-      </ul>
-    </div>
-
-    <div class = "btn-group">
-      <button id="school" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-        School
-        <span class = "caret"></span>
-      </button>
-      <ul id="schoolDrop" class="dropdown-menu" role = "menu">
-      </ul>
-    </div>
-
-    <div class = "btn-group">
-      <button id="major" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-        Major
-        <span class = "caret"></span>
-      </button>
-      <ul id="majorDrop" class="dropdown-menu" role = "menu">
-      </ul>
-    </div>
-    
-    <div class = "btn-group">
-      <button id="campus" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="infoType">
-        Info Type
-        <span class = "caret"></span>
-      </button>
-      <ul id="infoDrop" class="dropdown-menu" role = "menu">
-      </ul>
-    </div>
+           <!-- NEW -->
     
     <div id="chart"></div>
-
     
-    <script   src="http://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="../javascripts/ddtest.js">    </script>
-  </body>
+    <?php 
+    include('graphLogic.php');
+      
+      getStudent();
+    ?>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="../javascripts/ddtest.js"></script>
+  </body>
 </html>

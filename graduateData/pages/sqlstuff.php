@@ -39,17 +39,34 @@ if (! $db) {
  echo "no db";
 }
     //Data Set of All Students
-    $query = "select * from student";
+     $page    = (isset($_GET['page']) ? $_GET['page'] : 1);
+    /*    if($page=="" || $page==1)
+    {
+        $page1=0;
+    }
+    else
+    {
+        $page1=$page;
+    }*/
+
+    //for($i=1 ; $i<=$count ; $i++){
+
+    $query = "select * from student LIMIT 2 offset $page";
 
     $studentInfo = $mysqli->query($query);
+
     $row = $studentInfo->fetch_array();
-    //Each key needs outcomes go and
+
+    //Each key needs outcomes go and get them!
     $studentKey = $row['pkey'];
 
     $query = "call getoutcome(".$studentKey.")";
     $studentOutcome = $mysqli->query($query);
-    $outRow = $studentOutcome->fetch_array();
+    
 
+    while($row = $studentInfo->fetch_array()){
+        $outRow = $studentOutcome->fetch_array();
+        echo "<tr >";
     echo "<td>" . $row['lastname'] . ", " . $row['firstname'] . " </td>";
     echo "<td>" . $row['school'] . " </td>";
     echo "<td>" . $row['major'] . " </td>";
@@ -63,10 +80,22 @@ if (! $db) {
     echo "<td>" . $outRow['entity'] . " </td>";
     echo "<td>" . $outRow['position'] . " </td>";
     echo "<td>" . $outRow['JobFunction'] . " </td>";
-    echo "<td>" . $outRow['datecreated'] . " </td>";
+    echo "<td>" . $outRow['dateseen'] . " </td>";
     echo "<td>" . $outRow['approved'] . " </td>";
+    echo "</tr>";
+}
+
+    $count = mysqli_num_rows($studentInfo);
+
+      //  for($i=1 ; $i<=50 ; $i++)
+        //{
+            
+            ?> <a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page-1; ?>"> LAST </a>&nbsp&nbsp&nbsp    <a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page+1; ?>"> NEXT </a>
+            <?php
+
+        //}
+
 }
 
 
-getStudent();
 ?>

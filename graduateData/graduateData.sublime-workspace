@@ -1,0 +1,378 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nav",
+				"navbar-right"
+			],
+			[
+				"menu",
+				"Menu"
+			],
+			[
+				"m",
+				"Module"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"s",
+				"StickyHeader"
+			],
+			[
+				"S",
+				"SideMenu"
+			],
+			[
+				"babel",
+				"babelify"
+			],
+			[
+				"wat",
+				"watchify"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/xampp/htdocs/Grad-Student-Data/README.md",
+			"settings":
+			{
+				"buffer_size": 19,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3537,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n      <title>Graduate Outcome Data Processing</title>\n\n      <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" integrity=\"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7\" crossorigin=\"anonymous\">\n      <link href=\"../stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  </head>\n  <body>\n  <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n          </button>\n          <h4 class=\"h4\">CSDMP</h4>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n          <form class=\"navbar-form navbar-right\">\n              <a type=\"link\" class=\"btn btn-primary\" href=\"../index.html\" role=\"button\">Home</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"dataVerify.php\" role=\"button\">Data Editing</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"#\" role=\"button\">Dashboard</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"graphGeneration.php\" role=\"button\">Graph Generation</a>\n          </form>\n        </div><!--/.navbar-collapse -->\n      </div>\n    </nav> <!-- /Nav -->\n\n    <!-- Jumbotron-->\n    <div class=\"jumbotron\">\n      <div class=\"container\">\n        <h1>Welcome to CSDMP</h1>\n        <h3>Data Editing & Verification</h3>\n      </div>\n    </div>\n    <!--Real Body Begins -->\n    <div class=\"container-fluid\">\n        <div class=\"btn-group-vertical col-md-2 col-xs-2\">\n\n        <!--Verification DropDown-->\n          <div class = \"btn-group\">\n            <button id=\"json-one\" type = \"button\" class = \"btn btn-primary dropdown-toggle\" data-toggle =\"dropdown\">\n                Verification Status\n              <span class = \"caret\"></span>\n            </button>\n            <ul class = \"dropdown-menu\" role = \"menu\">\n                <li><a selected=\"\" value=\"base\">Select One</a></li>\n                <li href=\"#\"><a>Yes</a></li>\n                <li><a>No</a></li>\n                <li><a>All</a></li>\n            </ul>\n          </div>\n\n\n      </div>\n      \n      <!--Data Display-->\n      <div class=\"containter col-md-8 col-xs-3\">\n        <table class=\"table table-bordered\">\n          <thead>\n            <tr>\n              <th class=\"text-center\">Name</th>\n              <th class=\"text-center\">School</th>\n              <th class=\"text-center\">Major</th>\n              <th class=\"text-center\">Degree</th>\n              <th class=\"text-center\">Campus</th>\n              <th class=\"text-center\">Visa Status</th>\n              <th class=\"text-center\">Primary Status</th>\n              <th class=\"text-center\">Salary</th>\n              <th class=\"text-center\">Related to Study</th>\n              <th class=\"text-center\">Employer Category</th>\n              <th class=\"text-center\">Employer Name</th>\n              <th class=\"text-center\">Job Title</th>\n              <th class=\"text-center\">Job Function</th>\n              <th class=\"text-center\">Job Start Date</th>\n              <th class=\"text-center\">Verified</th>\n            </tr>\n          </thead>\n\n          <tbody>\n            <tr>\n              <?php\n              include('sqlstuff.php');\n              //connectToSQL();\n              getStudent();\n              ?>\n            </tr>\n          </tbody>\n\n        </table>\n        <div class=\"btn-group cold-md-3 col-xs-3\">\n        <button class=\"btn btn-primary\" >\n          Last\n        </button>\n        <button class=\"btn btn-primary\" >\n          Next\n        </button>\n      </div>\n      </div>\n      <nav class=\"navbar navbar-default navbar-fixed-bottom\">\n        <p>&copy; Pace University - Career Services Center</p>\n      </nav>\n    </div> <!-- /container -->\n\n    <!-- Bootstrap core JavaScript ================================================== -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n    <script src=\"../javascripts/basicJs.js\"></script>\n    <script>window.jQuery || document.write('<script src=\"../../assets/js/vendor/jquery.min.js\"><\\/script>')</script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\" integrity=\"sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>",
+			"file": "pages/dataVerify.php",
+			"file_size": 4883,
+			"file_write_time": 131187856171646565,
+			"settings":
+			{
+				"buffer_size": 4753,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages"
+	],
+	"file_history":
+	[
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/Content.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/index.html",
+		"/C/Users/JewFro/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/README.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/pages/Market.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/nav/SideMenu.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/nav/navStyle.scss",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/package.json",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/SideMenu.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/node_modules/react-burger-menu/README.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/container.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/StickyHeader.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/nav/navStyle.css",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/webpack.config.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/node_modules/react-burger-menu/example/src/example.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/Readme.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/Card.js",
+		"/C/Users/JewFro/Documents/React/react-dnd-master/package.json",
+		"/C/Users/JewFro/Documents/React/react-dnd-master/README.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/node_modules/webpack/README.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/node_modules/webpack/lib/HotModuleReplacement.runtime.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/.babelrc",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/ItemTypes.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/README.md",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/build/5.app.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/layouts/Dashboard/index.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/routers/Routes.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/layouts/Base.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/pages/dashboard/Blank/Blank.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/pages/dashboard/Home/index.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/pages/dashboard/Blank/index.jsx",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/src/components/common/AsyncElement.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/sb-admin-react-master/webpack.local.config.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/.gitignore",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/packingweb/webpack.config.js",
+		"/C/Users/JewFro/Dropbox/Front_end/packingweb/.babelrc",
+		"/C/Users/JewFro/Dropbox/Front_end/packingweb/index.html",
+		"/C/Users/JewFro/Dropbox/Front_end/packingweb/package.json",
+		"/C/Users/JewFro/Dropbox/Front_end/packingweb/webpack.config.js",
+		"/C/Users/JewFro/Dropbox/Front_end/packingweb/build/app.js",
+		"/C/Users/JewFro/Dropbox/Front_end/InProg/js/shoptakiapp.js",
+		"/C/Users/JewFro/Dropbox/Front_end/InProg/npm-debug.log",
+		"/C/Users/JewFro/Dropbox/Front_end/InProg/js/.babelrc",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/AdminLTE-2.3.6/pages/examples/login.html",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/AdminLTE-2.3.6/pages/calendar.html",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/InProg/package.json",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/InProg/js/shoptakiapp.js",
+		"/C/Users/JewFro/Documents/shoptaki-main/Front_end/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"HI",
+			"sidebar",
+			"class",
+			"Navbar",
+			"build"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/xampp/htdocs/Grad-Student-Data/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1397,
+								1397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pages/dataVerify.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3552,
+								3552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "graduateData.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
