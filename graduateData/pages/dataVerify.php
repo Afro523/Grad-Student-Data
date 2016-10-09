@@ -8,6 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+  <?php include('sqlstuff.php');?>
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -17,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h4 class="h4">CSDMP</h4>
+          <h4 class="h4">CSMP</h4>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
@@ -39,27 +40,187 @@
     </div>
     <!--Real Body Begins -->
     <div class="container-fluid">
-        <div class="btn-group-vertical col-md-3 col-xs-3">
+        <div class="btn-group-vertical col-md-2 col-xs-3">
 
-        <!--Verification DropDown-->
+        <!--School DropDown-->
           <div class = "btn-group">
-            <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                School
+              <span class = "caret"></span>
+            </button>
+            <ul class = "dropdown-menu" role = "menu">
+                <?php ?>
+            </ul>
+          </div>
+        <!--Campus DropDown-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                Campus
+              <span class = "caret"></span>
+            </button>
+            <ul class = "dropdown-menu" role = "menu">
+                <?php ?>
+            </ul>
+          </div>
+          <!--Level DropDown-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                Level
+              <span class = "caret"></span>
+            </button>
+            <ul class = "dropdown-menu" role = "menu">
+                <?php ?>
+            </ul>
+          </div>
+          <!--Grad Year DropDown-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                Grad Year
+              <span class = "caret"></span>
+            </button>
+            <ul class = "dropdown-menu" role = "menu">
+                <?php ?>
+            </ul>
+          </div>
+          <!--Verification DropDown-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Verification Status
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <li><a selected="" value="base">Select One</a></li>
                 <li href="#"><a>Yes</a></li>
                 <li><a>No</a></li>
                 <li><a>All</a></li>
             </ul>
           </div>
+          <!--Reviewed DropDown-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                Reviewed
+              <span class = "caret"></span>
+            </button>
+            <ul class = "dropdown-menu" role = "menu">
+                <li href="#"><a>Yes</a></li>
+                <li><a>No</a></li>
+                <li><a>All</a></li>
+            </ul>
+          </div>
+        </div> <!--End DropDowns-->
 
-
-      </div>
       
       <!--Data Display-->
-      <div class="containter col-md-8 col-xs-3">
+      <div class="panel-group col-md-9" id="accordion" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Outcome #1
+            </a>
+            </h4>
+          </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="form-inline">
+            <div class="input-group col-md-2">
+              <span class="input-group-addon" id="basic-addon1">Primary Status</span>
+              <input type="text" class="form-control" aria-describedby="basic-addon1">
+            </div>
+
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Salary</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Related to Study</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Employer Category</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Emplyer Name</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Title</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Function</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Start Date</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Verified</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
+          Outcome #2
+            </a>
+            </h4>
+          </div>
+        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <div class="form-inline">
+            <div class="input-group col-md-2">
+              <span class="input-group-addon" id="basic-addon1">Primary Status</span>
+              <input type="text" class="form-control" aria-describedby="basic-addon1">
+            </div>
+
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Salary</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Related to Study</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Employer Category</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Emplyer Name</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Title</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Function</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Job Start Date</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+          <div class="input-group col-md-2">
+            <span class="input-group-addon">Verified</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+      <!--<div class="containter col-md-8 col-xs-3">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -82,25 +243,13 @@
           </thead>
 
           <tbody>
-            <tr>
+            <tr> -->
               <?php
-              include('sqlstuff.php');
+              //include('sqlstuff.php');
               //connectToSQL();
               getStudent();
 
               ?>
-            </tr>
-          </tbody>
-
-        </table>
-     <!--         <div class="btn-group cold-md-3 col-xs-3">
-        <button class="btn btn-primary" >
-          Last
-        </button>
-        <button class="btn btn-primary" >
-          Next
-        </button>
-      </div> -->
       </div>
      <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
