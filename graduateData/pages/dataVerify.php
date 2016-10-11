@@ -39,7 +39,7 @@
       </div>
     </div>
     <!--Real Body Begins -->
-    <div class="container-fluid">
+ 
         <div class="btn-group-vertical col-md-2 col-xs-3">
 
         <!--School DropDown-->
@@ -107,19 +107,34 @@
             </ul>
           </div>
         </div> <!--End DropDowns-->
-
+        
+        <!-- Top Data Set using Non Changing Data -->
+        <div class="panel-group col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            Some Student
+            </div>
+            <div class="panel-body">
+              <div class="input-group col-md-2">
+                <span class="input-group-addon" id="basic-addon1">Name</span>
+                <input type="text" class="form-control" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+        </div>
       
       <!--Data Display-->
       <div class="panel-group col-md-9" id="accordion" role="tablist">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Outcome #1
             </a>
             </h4>
           </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
           <div class="form-inline">
             <div class="input-group col-md-2">
               <span class="input-group-addon" id="basic-addon1">Primary Status</span>
@@ -140,7 +155,7 @@
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
           </div>
           <div class="input-group col-md-2">
-            <span class="input-group-addon">Emplyer Name</span>
+            <span class="input-group-addon">Employer Name</span>
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
           </div>
           <div class="input-group col-md-2">
@@ -194,7 +209,7 @@
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
           </div>
           <div class="input-group col-md-2">
-            <span class="input-group-addon">Emplyer Name</span>
+            <span class="input-group-addon">Employer Name</span>
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
           </div>
           <div class="input-group col-md-2">
