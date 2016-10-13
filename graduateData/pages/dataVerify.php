@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h4 class="h4">CSMP</h4>
+          <h4 class="h4">GODP</h4>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
@@ -34,7 +34,7 @@
     <!-- Jumbotron-->
     <div class="jumbotron">
       <div class="container">
-        <h1>Welcome to CSDMP</h1>
+        <h1>Welcome to GODP</h1>
         <h3>Data Editing and Verification</h3>
       </div>
     </div>
@@ -115,10 +115,17 @@
             Some Student
             </div>
             <div class="panel-body">
+              
               <div class="input-group col-md-2">
                 <span class="input-group-addon" id="basic-addon1">Name</span>
                 <input type="text" class="form-control" aria-describedby="basic-addon1">
               </div>
+
+              <div class="input-group col-md-2">
+                <span class="input-group-addon" id="basic-addon1">Name</span>
+                <input type="text" class="form-control" aria-describedby="basic-addon1">
+              </div>
+
             </div>
           </div>
         </div>
@@ -180,19 +187,19 @@
 
 
     <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
           Outcome #2
-            </a>
-            </h4>
-          </div>
-        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+        </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
           <div class="form-inline">
             <div class="input-group col-md-2">
               <span class="input-group-addon" id="basic-addon1">Primary Status</span>
-              <input type="text" class="form-control" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="asdfasf" aria-describedby="basic-addon1">
             </div>
 
           <div class="input-group col-md-2">
@@ -234,31 +241,6 @@
   </div>
 
   </div>
-
-      <!--<div class="containter col-md-8 col-xs-3">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th class="text-center">Name</th>
-              <th class="text-center">School</th>
-              <th class="text-center">Major</th>
-              <th class="text-center">Degree</th>
-              <th class="text-center">Campus</th>
-              <th class="text-center">Visa Status</th>
-              <th class="text-center">Primary Status</th>
-              <th class="text-center">Salary</th>
-              <th class="text-center">Related to Study</th>
-              <th class="text-center">Employer Category</th>
-              <th class="text-center">Employer Name</th>
-              <th class="text-center">Job Title</th>
-              <th class="text-center">Job Function</th>
-              <th class="text-center">Job Start Date</th>
-              <th class="text-center">Verified</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr> -->
               <?php
               //include('sqlstuff.php');
               //connectToSQL();
