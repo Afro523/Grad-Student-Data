@@ -115,17 +115,33 @@
             Some Student
             </div>
             <div class="panel-body">
-              
-              <div class="input-group col-md-2">
-                <span class="input-group-addon" id="basic-addon1">Name</span>
-                <input type="text" class="form-control" aria-describedby="basic-addon1">
-              </div>
+              <div class="form-inline">
+                <div class="input-group col-md-2">
+                  <span class="input-group-addon" id="basic-addon1">Name</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
 
-              <div class="input-group col-md-2">
-                <span class="input-group-addon" id="basic-addon1">Name</span>
-                <input type="text" class="form-control" aria-describedby="basic-addon1">
-              </div>
+                <div class="input-group col-md-2">
+                  <span class="input-group-addon" id="basic-addon1">School</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
 
+                <div class="input-group col-md-2">
+                  <span class="input-group-addon" id="basic-addon1">Major</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group col-md-2">
+                  <span class="input-group-addon" id="basic-addon1">Campus</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group col-md-2">
+                  <span class="input-group-addon" id="basic-addon1">Visa</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

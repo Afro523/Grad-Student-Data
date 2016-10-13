@@ -39,17 +39,7 @@ if (! $db) {
  echo "no db";
 }
     //Data Set of All Students
-     $page    = (isset($_GET['page']) ? $_GET['page'] : 1);
-    /*    if($page=="" || $page==1)
-    {
-        $page1=0;
-    }
-    else
-    {
-        $page1=$page;
-    }*/
-
-    //for($i=1 ; $i<=$count ; $i++){
+    $page = (isset($_GET['page']) ? $_GET['page'] : 1);
 
     $query = "select * from student LIMIT 2 offset $page";
 
@@ -83,19 +73,17 @@ if (! $db) {
     echo "<td>" . $outRow['dateseen'] . " </td>";
     echo "<td>" . $outRow['approved'] . " </td>";
     echo "</tr>";
-}
+    }
 
     $count = mysqli_num_rows($studentInfo);
-
-      //  for($i=1 ; $i<=50 ; $i++)
-        //{
             
             ?> <a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page-1; ?>"> LAST </a>&nbsp&nbsp&nbsp    <a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page+1; ?>"> NEXT </a>
             <?php
-
-        //}
-
 }
 
+
+function getImmutables(){
+    
+}
 
 ?>
