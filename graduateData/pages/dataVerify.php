@@ -39,8 +39,7 @@
       </div>
     </div>
     <!--Real Body Begins -->
- 
-        <div class="btn-group-vertical col-md-2 col-xs-3">
+    <div class="btn-group-vertical col-md-2 col-xs-3">
 
         <!--School DropDown-->
           <div class = "btn-group">
@@ -106,6 +105,9 @@
                 <li><a>All</a></li>
             </ul>
           </div>
+        <?php
+        setButtons();
+        ?>
         </div> <!--End DropDowns-->
         
         <!-- Top Data Set using Non Changing Data -->
@@ -116,7 +118,7 @@
               ?>
           </div>
         </div>
-      
+
       <!--Data Display-->
       <div class="panel-group col-md-9" id="accordion" role="tablist">
         <div class="panel panel-default">
@@ -184,50 +186,17 @@
       <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
           <div class="form-inline">
-            <div class="input-group col-md-2">
-              <span class="input-group-addon" id="basic-addon1">Primary Status</span>
-              <input type="text" class="form-control" placeholder="asdfasf" aria-describedby="basic-addon1">
-            </div>
 
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Salary</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
+          <?php
+          setOutcomes();
+          ?>
 
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Related to Study</span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Employer Category</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Employer Name</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Job Title</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Job Function</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Job Start Date</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
-          <div class="input-group col-md-2">
-            <span class="input-group-addon">Verified</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-      </div>
+  </div>
      <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
       </nav> -->
