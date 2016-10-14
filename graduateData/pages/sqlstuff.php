@@ -2,26 +2,17 @@
 
 function connectToSQL(){
 
-$mysqli = new mysqli("localhost", "root");
-$databaseSelect = 'graduateoutcomes';
-if ($mysqli->connect_errno) {
+    $mysqli = new mysqli("localhost", "root");
+    $databaseSelect = 'graduateoutcomes';
+    if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+    }
 
-$db = mysqli_select_db ($mysqli, $databaseSelect);
+    $db = mysqli_select_db ($mysqli, $databaseSelect);
 
-if (! $db) {
- echo "no db";
-}
-
-/* Select queries return a resultset /
-if ($result = $mysqli->query($query)) {
-    $row = $result->fetch_array();
-
-    //printf("Select returned %d rows.\n", $result->num_rows);
-
-    /// free result set */
-
+    if (! $db) {
+    echo "no db";
+    }
 }
 
 
@@ -83,7 +74,48 @@ if (! $db) {
 
 
 function getImmutables(){
+    $mysqli = new mysqli("localhost", "root");
+    $databaseSelect = 'graduateoutcomes';
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+
+    $db = mysqli_select_db ($mysqli, $databaseSelect);
+
+    if (! $db) {
+    echo "no db";
+    }
     
+    $page = (isset($_GET['page']) ? $_GET['page'] : 1);
+    $query = "select * from student LIMIT 2 offset $page";
+    $studentInfo = $mysqli->query($query);
+    $row = $studentInfo->fetch_array();
+    //Each key needs outcomes go and get them!
+    $studentKey = $row['pkey'];
+    $query = "call getoutcome(".$studentKey.")";
+    $studentOutcome = $mysqli->query($query);
+
+    echo "<td>" . $row['lastname'] . ", " . $row['firstname'] . " </td>";
+
+    echo "<div class=\"panel-heading\">" . $row['lastname'] . ", " . $row['firstname'] .  "</div>"; 
+    echo "<div class=\"panel-body\">";
+    echo "<div class-\"form-inline\">";
+    echo "<div class=\"input-group col-md-2\">";
+    echo "<span class=\"input-group-addon\" id=\"basic-addon1\">" . $row['school'] . "</span>";
+    echo "<input type=\"text\" class=\"form-control\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<div class=\"input-group col-md-2\">";
+    echo "<span class=\"input-group-addon\" id=\"basic-addon1\">" . $row['major'] . "</span>";
+    echo "<input type=\"text\" class=\"form-control\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<div class=\"input-group col-md-2\">";
+    echo "<span class=\"input-group-addon\" id=\"basic-addon1\">" . $row['campus'] . "</span>";
+    echo "<input type=\"text\" class=\"form-control\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<div class=\"input-group col-md-2\">";
+    echo "<span class=\"input-group-addon\" id=\"basic-addon1\">" . $row['visa'] . "</span>";
+    echo "<input type=\"text\" class=\"form-control\" aria-describedby=\"basic-addon1\">
+                </div>
+
+              </div>
+            </div>";
 }
 
 ?>

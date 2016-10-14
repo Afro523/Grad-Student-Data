@@ -111,38 +111,9 @@
         <!-- Top Data Set using Non Changing Data -->
         <div class="panel-group col-md-9">
           <div class="panel panel-default">
-            <div class="panel-heading">
-            Some Student
-            </div>
-            <div class="panel-body">
-              <div class="form-inline">
-                <div class="input-group col-md-2">
-                  <span class="input-group-addon" id="basic-addon1">Name</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-                <div class="input-group col-md-2">
-                  <span class="input-group-addon" id="basic-addon1">School</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-                <div class="input-group col-md-2">
-                  <span class="input-group-addon" id="basic-addon1">Major</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-                <div class="input-group col-md-2">
-                  <span class="input-group-addon" id="basic-addon1">Campus</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-                <div class="input-group col-md-2">
-                  <span class="input-group-addon" id="basic-addon1">Visa</span>
-                  <input type="text" class="form-control" aria-describedby="basic-addon1">
-                </div>
-
-              </div>
-            </div>
+            <?php
+              getImmutables();
+              ?>
           </div>
         </div>
       
@@ -255,14 +226,7 @@
       </div>
     </div>
   </div>
-
   </div>
-              <?php
-              //include('sqlstuff.php');
-              //connectToSQL();
-              getStudent();
-
-              ?>
       </div>
      <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
