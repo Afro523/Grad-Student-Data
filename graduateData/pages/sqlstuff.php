@@ -15,7 +15,6 @@ function connectToSQL(){
     }
 }
 
-
 function getStudent(){
 
 $mysqli = new mysqli("localhost", "root");
@@ -72,6 +71,26 @@ if (! $db) {
             <?php
 }
 
+function generateDrops(){
+    $mysqli = new mysqli("localhost", "root");
+    $databaseSelect = 'graduateoutcomes';
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+
+    $db = mysqli_select_db ($mysqli, $databaseSelect);
+
+    if (! $db) {
+    echo "no db";
+    }
+    
+    $query = "call listcampus";
+    $campus = $mysqli->query($query);
+    $row = $campus->fetch_array();
+    $studentOutcome = $mysqli->query($query);
+
+    echo "";
+}
 
 function getImmutables(){
     $mysqli = new mysqli("localhost", "root");

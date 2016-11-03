@@ -58,7 +58,9 @@
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <?php ?>
+                <?php 
+                  generateDrops();
+                ?>
             </ul>
           </div>
           <!--Level DropDown-->

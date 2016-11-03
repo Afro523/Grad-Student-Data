@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"form-inline"
+			],
+			[
 				"nav",
 				"navbar-right"
 			],
@@ -55,18 +59,25 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3537,
+				"buffer_size": 3807,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n      <title>Graduate Outcome Data Processing</title>\n\n      <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" integrity=\"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7\" crossorigin=\"anonymous\">\n      <link href=\"../stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  </head>\n  <body>\n  <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n          <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n          </button>\n          <h4 class=\"h4\">CSDMP</h4>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n          <form class=\"navbar-form navbar-right\">\n              <a type=\"link\" class=\"btn btn-primary\" href=\"../index.html\" role=\"button\">Home</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"dataVerify.php\" role=\"button\">Data Editing</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"#\" role=\"button\">Dashboard</a>\n              <a type=\"link\" class=\"btn btn-primary\" href=\"graphGeneration.php\" role=\"button\">Graph Generation</a>\n          </form>\n        </div><!--/.navbar-collapse -->\n      </div>\n    </nav> <!-- /Nav -->\n\n    <!-- Jumbotron-->\n    <div class=\"jumbotron\">\n      <div class=\"container\">\n        <h1>Welcome to CSDMP</h1>\n        <h3>Data Editing & Verification</h3>\n      </div>\n    </div>\n    <!--Real Body Begins -->\n    <div class=\"container-fluid\">\n        <div class=\"btn-group-vertical col-md-2 col-xs-2\">\n\n        <!--Verification DropDown-->\n          <div class = \"btn-group\">\n            <button id=\"json-one\" type = \"button\" class = \"btn btn-primary dropdown-toggle\" data-toggle =\"dropdown\">\n                Verification Status\n              <span class = \"caret\"></span>\n            </button>\n            <ul class = \"dropdown-menu\" role = \"menu\">\n                <li><a selected=\"\" value=\"base\">Select One</a></li>\n                <li href=\"#\"><a>Yes</a></li>\n                <li><a>No</a></li>\n                <li><a>All</a></li>\n            </ul>\n          </div>\n\n\n      </div>\n      \n      <!--Data Display-->\n      <div class=\"containter col-md-8 col-xs-3\">\n        <table class=\"table table-bordered\">\n          <thead>\n            <tr>\n              <th class=\"text-center\">Name</th>\n              <th class=\"text-center\">School</th>\n              <th class=\"text-center\">Major</th>\n              <th class=\"text-center\">Degree</th>\n              <th class=\"text-center\">Campus</th>\n              <th class=\"text-center\">Visa Status</th>\n              <th class=\"text-center\">Primary Status</th>\n              <th class=\"text-center\">Salary</th>\n              <th class=\"text-center\">Related to Study</th>\n              <th class=\"text-center\">Employer Category</th>\n              <th class=\"text-center\">Employer Name</th>\n              <th class=\"text-center\">Job Title</th>\n              <th class=\"text-center\">Job Function</th>\n              <th class=\"text-center\">Job Start Date</th>\n              <th class=\"text-center\">Verified</th>\n            </tr>\n          </thead>\n\n          <tbody>\n            <tr>\n              <?php\n              include('sqlstuff.php');\n              //connectToSQL();\n              getStudent();\n              ?>\n            </tr>\n          </tbody>\n\n        </table>\n        <div class=\"btn-group cold-md-3 col-xs-3\">\n        <button class=\"btn btn-primary\" >\n          Last\n        </button>\n        <button class=\"btn btn-primary\" >\n          Next\n        </button>\n      </div>\n      </div>\n      <nav class=\"navbar navbar-default navbar-fixed-bottom\">\n        <p>&copy; Pace University - Career Services Center</p>\n      </nav>\n    </div> <!-- /container -->\n\n    <!-- Bootstrap core JavaScript ================================================== -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n    <script src=\"../javascripts/basicJs.js\"></script>\n    <script>window.jQuery || document.write('<script src=\"../../assets/js/vendor/jquery.min.js\"><\\/script>')</script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\" integrity=\"sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>",
 			"file": "pages/dataVerify.php",
-			"file_size": 4883,
-			"file_write_time": 131187856171646565,
 			"settings":
 			{
-				"buffer_size": 4753,
+				"buffer_size": 8838,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/sqlstuff.php",
+			"settings":
+			{
+				"buffer_size": 7797,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -163,7 +174,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -177,6 +188,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"col-md-2",
 			"HI",
 			"sidebar",
 			"class",
@@ -199,7 +211,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -227,7 +239,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -236,15 +248,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3537,
+						"buffer_size": 3807,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1397,
-								1397
+								1026,
+								1026
 							]
 						],
 						"settings":
@@ -254,10 +266,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -266,15 +278,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4753,
+						"buffer_size": 8838,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3552,
-								3552
+								8044,
+								8044
 							]
 						],
 						"settings":
@@ -284,7 +296,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 1845.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages/sqlstuff.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4969,
+								4969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1785.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -350,6 +392,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\JewFro\\Documents\\shoptaki-main\\Front_End\\shoptaki.sublime-workspace"
+			]
 		],
 		"width": 380.0
 	},
