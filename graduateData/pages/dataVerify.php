@@ -112,6 +112,13 @@
             </ul>
 
           </div>
+          <!-- Go Button-->
+          <div class = "btn-group">
+            <button type = "button" class = "btn btn-success" disabled>
+                Go
+            </button>
+
+          </div>
                     
         </div> <!--End DropDowns-->
 
