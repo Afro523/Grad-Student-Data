@@ -166,19 +166,19 @@ function getImmutables(){
     echo "<form class=\"form-inline\">";
     echo "<div class=\"input-group col-md-4\">";
     echo "<span class=\"input-group-addon\" id=\"basic-addon1\"> School </span>";
-    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['school'] . "\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['school'] . "\" aria-describedby=\"basic-addon1\" readonly> </div>";
 
     echo "<div class=\"input-group col-md-4\">";
     echo "<span class=\"input-group-addon\" id=\"basic-addon1\">Major</span>";
-    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['major'] . "\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['major'] . "\" aria-describedby=\"basic-addon1\" readonly> </div>";
 
     echo "<div class=\"input-group col-md-4\">";
     echo "<span class=\"input-group-addon\" id=\"basic-addon1\"> Campus </span>";
-    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['campus'] . "\" aria-describedby=\"basic-addon1\"> </div>";
+    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['campus'] . "\" aria-describedby=\"basic-addon1\" readonly> </div>";
 
     echo "<div class=\"input-group col-md-4\">";
     echo "<span class=\"input-group-addon\" id=\"basic-addon1\"> Visa </span>";
-    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['visa'] . "\" aria-describedby=\"basic-addon1\"> </div>
+    echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $row['visa'] . "\" aria-describedby=\"basic-addon1\" readonly> </div>
         </div> </form> </div>";
 }
 
@@ -211,7 +211,7 @@ function setOutcomes(){
           </div>";
     echo "<div class=\"input-group col-md-3\">";
     echo "<span class=\"input-group-addon\">Salary</span>";
-    echo "<input type=\"text\" class=\"form-control\" placeholder=\"$" . $outRow['salary'] . "\" aria-label=\"Amount (to the nearest dollar)\">
+    echo "<input type=\"number\" class=\"form-control\" placeholder=\"$" . $outRow['salary'] . "\" aria-label=\"Amount (to the nearest dollar)\">
           </div>";
     echo "<div class=\"input-group col-md-3\">";
     echo "<span class=\"input-group-addon\">Related to Study</span>";
