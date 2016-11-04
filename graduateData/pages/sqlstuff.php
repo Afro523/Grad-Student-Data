@@ -84,12 +84,21 @@ function generateDrops(){
     echo "no db";
     }
     
-    $query = "call listcampus";
+    $query = "CALL listcampus()";
     $campus = $mysqli->query($query);
-    $row = $campus->fetch_array();
-    $studentOutcome = $mysqli->query($query);
+//  $output = $campus->fetch_array();
 
-    echo "";
+    $output = mysqli_fetch_array($campus, MYSQLI_NUM);
+
+    if ( !$campus ) die('Database Error: '.$db->error);
+    while ( $row = $campus->fetch_assoc() ) {
+        echo implode("_",$row);
+        }
+
+    for($i = 0; $i < count($output); $i++){
+        echo "$output[$i]";    
+    }
+    
 }
 
 function getImmutables(){

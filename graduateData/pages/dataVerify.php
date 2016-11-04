@@ -36,6 +36,10 @@
       <div class="container">
         <h1>Welcome to GODP</h1>
         <h3>Data Editing and Verification</h3>
+        <?php
+              generateDrops();
+              ?>
+
       </div>
     </div>
     <!--Real Body Begins -->
