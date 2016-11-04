@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"btn",
+				"btn-group"
+			],
+			[
 				"for",
 				"form-inline"
 			],
@@ -67,7 +71,7 @@
 			"file": "pages/dataVerify.php",
 			"settings":
 			{
-				"buffer_size": 8838,
+				"buffer_size": 9316,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -76,7 +80,7 @@
 			"file": "pages/sqlstuff.php",
 			"settings":
 			{
-				"buffer_size": 7797,
+				"buffer_size": 9503,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -278,15 +282,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8838,
+						"buffer_size": 9316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8044,
-								8044
+								8030,
+								8030
 							]
 						],
 						"settings":
@@ -296,7 +300,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1845.0,
+						"translation.y": 2562.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -308,15 +312,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7797,
+						"buffer_size": 9503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4969,
-								4969
+								9456,
+								9456
 							]
 						],
 						"settings":
@@ -326,7 +330,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1785.0,
+						"translation.y": 3214.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

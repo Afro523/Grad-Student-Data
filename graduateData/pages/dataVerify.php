@@ -36,10 +36,6 @@
       <div class="container">
         <h1>Welcome to GODP</h1>
         <h3>Data Editing and Verification</h3>
-        <?php
-              generateDrops();
-              ?>
-
       </div>
     </div>
     <!--Real Body Begins -->
@@ -52,7 +48,9 @@
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <?php ?>
+                <?php 
+                  getSchoolButtons();
+                ?>
             </ul>
           </div>
         <!--Campus DropDown-->
@@ -63,7 +61,7 @@
             </button>
             <ul class = "dropdown-menu" role = "menu">
                 <?php 
-                  generateDrops();
+                  getCampusButtons();
                 ?>
             </ul>
           </div>
@@ -74,7 +72,9 @@
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <?php ?>
+                <?php
+                  getLevelButtons();
+                ?>
             </ul>
           </div>
           <!--Grad Year DropDown-->
@@ -110,11 +110,11 @@
                 <li><a>No</a></li>
                 <li><a>All</a></li>
             </ul>
+
           </div>
-        <?php
-        setButtons();
-        ?>
+                    
         </div> <!--End DropDowns-->
+
         
         <!-- Top Data Set using Non Changing Data -->
         <div class="panel-group col-md-9">
@@ -202,6 +202,9 @@
     </div>
   </div>
   </div>
+  <?php
+    setNextLast();
+  ?>
   </div>
      <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
         <p>&copy; Pace University - Career Services Center</p>
@@ -211,6 +214,13 @@
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../javascripts/basicJs.js"></script>
+    <script type="text/javascript">
+  $(".btn-group").on('click', 'li a', function(){
+        $(this).parent().parent().siblings(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+        $(this).parent().parent().siblings(".btn:first-child").val($(this).text());
+    });
+  
+</script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>

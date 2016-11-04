@@ -71,7 +71,7 @@ if (! $db) {
             <?php
 }
 
-function generateDrops(){
+function getCampusButtons(){
     $mysqli = new mysqli("localhost", "root");
     $databaseSelect = 'graduateoutcomes';
     if ($mysqli->connect_errno) {
@@ -84,19 +84,55 @@ function generateDrops(){
     echo "no db";
     }
     
-    $query = "CALL listcampus()";
-    $campus = $mysqli->query($query);
-//  $output = $campus->fetch_array();
+    $query = "call getcampus()";
+    $result = $mysqli->query($query);
 
-    $output = mysqli_fetch_array($campus, MYSQLI_NUM);
+    while ($output = $result->fetch_array()) {
+    echo "<li><a href=\"#\"> " . $output['campus'] . "</a></li>";
+    }
+    
+}
 
-    if ( !$campus ) die('Database Error: '.$db->error);
-    while ( $row = $campus->fetch_assoc() ) {
-        echo implode("_",$row);
-        }
+function getLevelButtons(){
+    $mysqli = new mysqli("localhost", "root");
+    $databaseSelect = 'graduateoutcomes';
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
 
-    for($i = 0; $i < count($output); $i++){
-        echo "$output[$i]";    
+    $db = mysqli_select_db ($mysqli, $databaseSelect);
+
+    if (! $db) {
+    echo "no db";
+    }
+    
+    $query = "call getlevel()";
+    $result = $mysqli->query($query);
+
+    while ($output = $result->fetch_array()) {
+    echo "<li><a href=\"#\"> " . $output['level'] . "</a></li>";
+    }
+
+}
+
+function getSchoolButtons(){
+    $mysqli = new mysqli("localhost", "root");
+    $databaseSelect = 'graduateoutcomes';
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+
+    $db = mysqli_select_db ($mysqli, $databaseSelect);
+
+    if (! $db) {
+    echo "no db";
+    }
+    
+    $query = "call getschool()";
+    $result = $mysqli->query($query);
+
+    while ($output = $result->fetch_array()) {
+    echo "<li><a href=\"#\"> " . $output['school'] . "</a></li>";
     }
     
 }
@@ -210,9 +246,11 @@ function setOutcomes(){
 ?>
 
 <?php
-function setButtons(){
+function setNextLast(){
 $page = (isset($_GET['page']) ? $_GET['page'] : 1);
-?> <a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page+1; ?>"> NEXT </a><a id=""i"" class="btn btn-primary" style="visible:none" href="dataVerify.php?page=<?php echo $page-1; ?>"> LAST </a> 
+?> 
+<div class="btn-group">
+<a id=""i"" class="btn btn-info" style="visible:none" href="dataVerify.php?page=<?php echo $page-1; ?>"> Last </a><a id=""i"" class="btn btn-info" style="visible:none" href="dataVerify.php?page=<?php echo $page+1; ?>"> Next </a> </div>
             <?php
 }
 ?>
