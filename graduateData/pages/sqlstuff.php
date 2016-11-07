@@ -242,6 +242,19 @@ function setOutcomes(){
     echo "<input type=\"text\" class=\"form-control\" placeholder=\"" . $outRow['approved'] . "\">
           </div>";
 }
+
+function useFilter(){
+    echo print_r($_POST);
+
+    if (isset($_POST['schoolDrop'])) {
+        $value = $_POST['schoolDrop'];
+        echo $_POST;    
+    } else {
+        $schoolSelect = $_POST['schoolDrop'];
+        echo $schoolSelect;
+    }
+
+}
  
 ?>
 

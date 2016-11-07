@@ -37,13 +37,18 @@
         <h1>Welcome to GODP</h1>
         <h3>Data Editing and Verification</h3>
       </div>
+      <?php print_r($_POST); ?>
     </div>
     <!--Real Body Begins -->
-    <div class="btn-group-vertical col-md-2 col-xs-3">
 
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
+    
+
+    <div class="btn-group-vertical col-md-2 col-xs-3">
+        
         <!--School DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="schoolDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 School
               <span class = "caret"></span>
             </button>
@@ -55,7 +60,7 @@
           </div>
         <!--Campus DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="campusDrop" class ="btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Campus
               <span class = "caret"></span>
             </button>
@@ -67,7 +72,7 @@
           </div>
           <!--Level DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="levelDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Level
               <span class = "caret"></span>
             </button>
@@ -79,7 +84,7 @@
           </div>
           <!--Grad Year DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="gradyearDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Grad Year
               <span class = "caret"></span>
             </button>
@@ -89,7 +94,7 @@
           </div>
           <!--Verification DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="verifyDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Verification Status
               <span class = "caret"></span>
             </button>
@@ -101,7 +106,7 @@
           </div>
           <!--Reviewed DropDown-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" name="reviewedDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Reviewed
               <span class = "caret"></span>
             </button>
@@ -114,14 +119,19 @@
           </div>
           <!-- Go Button-->
           <div class = "btn-group">
-            <button type = "button" class = "btn btn-success" disabled>
+            <button type = "submit" class = "btn btn-success">
                 Go
             </button>
 
-          </div>
-                    
-        </div> <!--End DropDowns-->
 
+            </form>
+
+
+
+          </div>
+            
+        </div> <!--End DropDowns-->
+        
         
         <!-- Top Data Set using Non Changing Data -->
         <div class="panel-group col-md-9">
