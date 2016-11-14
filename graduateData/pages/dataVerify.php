@@ -41,14 +41,14 @@
     </div>
     <!--Real Body Begins -->
 
-    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
+    <form id="filters" method="post" action="">
     
 
     <div class="btn-group-vertical col-md-2 col-xs-3">
         
         <!--School DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="schoolDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" id="schoolDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 School
               <span class = "caret"></span>
             </button>
@@ -60,7 +60,7 @@
           </div>
         <!--Campus DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="campusDrop" class ="btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" id="campusDrop" class ="btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Campus
               <span class = "caret"></span>
             </button>
@@ -72,7 +72,7 @@
           </div>
           <!--Level DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="levelDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" id="levelDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Level
               <span class = "caret"></span>
             </button>
@@ -84,7 +84,7 @@
           </div>
           <!--Grad Year DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="gradyearDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" id="gradyearDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Grad Year
               <span class = "caret"></span>
             </button>
@@ -94,8 +94,8 @@
           </div>
           <!--Verification DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="verifyDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-                Verification Status
+            <button type = "button" id="approvedDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+                Approved Status
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
@@ -106,7 +106,7 @@
           </div>
           <!--Reviewed DropDown-->
           <div class = "btn-group">
-            <button type = "button" name="reviewedDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+            <button type = "button" id="reviewedDrop" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
                 Reviewed
               <span class = "caret"></span>
             </button>
@@ -119,7 +119,7 @@
           </div>
           <!-- Go Button-->
           <div class = "btn-group">
-            <button type = "submit" class = "btn btn-success">
+            <button id="submit" type="submit" class = "btn btn-success">
                 Go
             </button>
 
@@ -231,13 +231,7 @@
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../javascripts/basicJs.js"></script>
-    <script type="text/javascript">
-  $(".btn-group").on('click', 'li a', function(){
-        $(this).parent().parent().siblings(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
-        $(this).parent().parent().siblings(".btn:first-child").val($(this).text());
-    });
-  
-</script>
+    <script src="../javascripts/ajax.js" type="text/javascript"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>

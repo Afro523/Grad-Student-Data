@@ -4,8 +4,48 @@
 		"selected_items":
 		[
 			[
+				"qure",
+				"queryReturn"
+			],
+			[
+				"query",
+				"queryReturn"
+			],
+			[
+				"app",
+				"approved2"
+			],
+			[
+				"campus",
+				"campus2"
+			],
+			[
+				"sch",
+				"school2"
+			],
+			[
+				"revi",
+				"reviewedDrop"
+			],
+			[
+				"le",
+				"levelSelect"
+			],
+			[
+				"cam",
+				"campusSelect"
+			],
+			[
+				"verify",
+				"verifySelect"
+			],
+			[
+				"school",
+				"schoolSelect"
+			],
+			[
 				"btn",
-				"btn-group"
+				"btn-primary"
 			],
 			[
 				"for",
@@ -68,19 +108,56 @@
 			}
 		},
 		{
-			"file": "pages/dataVerify.php",
+			"file": "pages/sqlstuff.php",
 			"settings":
 			{
-				"buffer_size": 9316,
+				"buffer_size": 9846,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pages/sqlstuff.php",
+			"file": "pages/dataVerify.php",
 			"settings":
 			{
-				"buffer_size": 9503,
+				"buffer_size": 9494,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "javascripts/ajax.js",
+			"settings":
+			{
+				"buffer_size": 1061,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "$(document).ready(function(){"
+			}
+		},
+		{
+			"file": "pages/graphGeneration.html",
+			"settings":
+			{
+				"buffer_size": 4239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "javascripts/basicJs.js",
+			"settings":
+			{
+				"buffer_size": 423,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/filterSubmit.php",
+			"settings":
+			{
+				"buffer_size": 1196,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -124,10 +201,13 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages"
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/graphGeneration.php",
+		"/C/Users/JewFro/Documents/Grad School/index.html",
+		"/C/Users/JewFro/Documents/Grad School/index.php",
 		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/src/components/Content.js",
 		"/C/Users/JewFro/Documents/shoptaki-main/Front_End/index.html",
 		"/C/Users/JewFro/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/README.md",
@@ -215,7 +295,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -243,7 +323,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -273,54 +353,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "pages/dataVerify.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8030,
-								8030
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2562.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "pages/sqlstuff.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9503,
+						"buffer_size": 9846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9456,
-								9456
+								6741,
+								6663
 							]
 						],
 						"settings":
@@ -330,7 +380,160 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3214.0,
+						"translation.y": 2786.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages/dataVerify.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4009,
+								4009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1302.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "javascripts/ajax.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"auto_name": "$(document).ready(function(){",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pages/graphGeneration.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3027,
+								3027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 672.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "javascripts/basicJs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "php/filterSubmit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1147,
+								1147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -356,11 +559,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.486244841816,
 			1.0
 		],
 		"rows":
@@ -412,14 +622,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":

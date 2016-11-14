@@ -88,7 +88,7 @@ function getCampusButtons(){
     $result = $mysqli->query($query);
 
     while ($output = $result->fetch_array()) {
-    echo "<li><a href=\"#\"> " . $output['campus'] . "</a></li>";
+    echo "<li><a type=\"button\" class=\"btn\">" . $output['campus'] . "</a></li>";
     }
     
 }
@@ -110,7 +110,7 @@ function getLevelButtons(){
     $result = $mysqli->query($query);
 
     while ($output = $result->fetch_array()) {
-    echo "<li><a href=\"#\"> " . $output['level'] . "</a></li>";
+    echo "<li><a type=\"button\" class=\"btn\"> " . $output['level'] . "</a></li>";
     }
 
 }
@@ -132,7 +132,7 @@ function getSchoolButtons(){
     $result = $mysqli->query($query);
 
     while ($output = $result->fetch_array()) {
-    echo "<li><a href=\"#\"> " . $output['school'] . "</a></li>";
+    echo "<li><a type=\"button\" class=\"btn\"> " . $output['school'] . "</a></li>";
     }
     
 }
