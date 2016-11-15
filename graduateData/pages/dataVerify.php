@@ -99,9 +99,9 @@
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <li href="#"><a>Yes</a></li>
-                <li><a>No</a></li>
-                <li><a>All</a></li>
+                <li><a type="button" class="btn">Yes</a></li>
+                <li><a type="button" class="btn">No</a></li>
+                <li><a type="button" class="btn">All</a></li>
             </ul>
           </div>
           <!--Reviewed DropDown-->
@@ -111,9 +111,9 @@
               <span class = "caret"></span>
             </button>
             <ul class = "dropdown-menu" role = "menu">
-                <li href="#"><a>Yes</a></li>
-                <li><a>No</a></li>
-                <li><a>All</a></li>
+                <li><a type="button" class="btn">Yes</a></li>
+                <li><a type="button" class="btn">No</a></li>
+                <li><a type="button" class="btn">All</a></li>
             </ul>
 
           </div>
@@ -223,10 +223,7 @@
     setNextLast();
   ?>
   </div>
-     <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
-        <p>&copy; Pace University - Career Services Center</p>
-      </nav> -->
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
