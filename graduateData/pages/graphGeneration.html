@@ -37,58 +37,27 @@
     	</div>
     	<div class="container-fluid">
     		<!--This is to hold all dropdown options-->
-    		<div class="pull-left">
+    		<div class="btn-group-vertical col-md-2 col-xs-3">
     			<!--Drop1-->
-          <div class = "btn-group">
-   					<button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
-      				School 
-      				<span class = "caret"></span>
-   					</button>
-   
-   					<ul class = "dropdown-menu" role = "menu">
-      					<li><a href = "" selected="" value="base">Select One</a></li>
-      					<li><a href = "#">Another action</a></li>
-      					<li><a href = "#">Something else here</a></li>
-  					</ul>
-				  </div>
-          <!--Drop2-->
-				  <div class = "btn-group">
-				    <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
-				      Level   
-				      <span class = "caret"></span>
-				   </button>
-	   
-				   	<ul class = "dropdown-menu" role = "menu">
-				      	<li><a href = "#">Action</a></li>
-				      	<li><a href = "#">Another action</a></li>
-				      	<li><a href = "#">Something else here</a></li>
-				   	</ul>
-				   
-				  </div>
-          <!--Drop3-->
-          <div class = "btn-group">
-            <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
-              Campus    
-              <span class = "caret"></span>
-           </button>
-     
-            <ul class = "dropdown-menu" role = "menu">
-                <li><a href = "#">Action</a></li>
-                <li><a href = "#">Another action</a></li>
-                <li><a href = "#">Something else here</a></li>
-            </ul>
-           
-          </div>
+          <form id="graphSelection" method="post" action="">
+            <div class = "btn-group">
+   					  <button id="json-one" type = "button" class = "btn btn-primary dropdown-toggle" data-toggle ="dropdown">
+      				Category to Sort By
+      				  <span class = "caret"></span>
+   					  </button>
+                <ul class = "dropdown-menu" role = "menu">
+                  <li><a type="button" class="btn">School</a></li>
+      					 <li><a type="button" class="btn">Campus</a></li>
+      					 <li><a type="button" class="btn">Level</a></li>
+  					   </ul>
+              <button class="btn btn-success">Generate Graph</button>
+				    </div>
+          </form>
     		</div>
     		<!--This is to hold the graph generation-->
-    		<div class="container pull-right">
+    		<div class="container">
 
           <div id="chart"></div>
-    
-          <?php 
-            include('graphLogic.php');
-            getStudent();
-          ?>
     		</div>
     	</div>
       <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>

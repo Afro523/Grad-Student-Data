@@ -145,12 +145,20 @@
 			}
 		},
 		{
-			"file": "javascripts/basicJs.js",
+			"file": "javascripts/ddtest.js",
 			"settings":
 			{
-				"buffer_size": 423,
+				"buffer_size": 5582,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages/studentGraph.php",
+			"settings":
+			{
+				"buffer_size": 1420,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -201,10 +209,14 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/dataFiles",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/basicJs.js",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/graphGeneration.php",
 		"/C/Users/JewFro/Documents/Grad School/index.html",
 		"/C/Users/JewFro/Documents/Grad School/index.php",
@@ -295,7 +307,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -323,7 +335,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -353,7 +365,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -369,8 +381,8 @@
 						"selection":
 						[
 							[
-								6741,
-								6663
+								6788,
+								6788
 							]
 						],
 						"settings":
@@ -383,7 +395,7 @@
 						"translation.y": 2786.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -410,10 +422,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1302.0,
+						"translation.y": 322.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -429,8 +441,8 @@
 						"selection":
 						[
 							[
-								238,
-								238
+								1061,
+								1061
 							]
 						],
 						"settings":
@@ -460,8 +472,8 @@
 						"selection":
 						[
 							[
-								3027,
-								3027
+								3691,
+								3691
 							]
 						],
 						"settings":
@@ -471,38 +483,68 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 672.0,
+						"translation.y": 1092.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "javascripts/basicJs.js",
+					"file": "javascripts/ddtest.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 423,
+						"buffer_size": 5582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								417,
-								417
+								5582,
+								5582
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pages/studentGraph.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1082,
+								1082
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -512,7 +554,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "php/filterSubmit.php",
 					"semi_transient": false,
 					"settings":
@@ -524,8 +566,8 @@
 						"selection":
 						[
 							[
-								1147,
-								1147
+								592,
+								592
 							]
 						],
 						"settings":
@@ -533,10 +575,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 168.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -629,7 +671,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":
