@@ -29,7 +29,7 @@ $mysqli = new mysqli("localhost", "root");
 		$csvline = "label,count" . PHP_EOL;
 		fwrite($fp, $csvline);
 		while ($row = mysqli_fetch_array($result)){
-			$csvline = $row['campus'] . "," . $row['COUNT(pkey)']  . PHP_EOL;
+			$csvline = $row['campus'] . "," . $row['COUNT(s.pkey)']  . PHP_EOL;
 			fwrite($fp, $csvline);
 		}
 		fclose($fp);
@@ -41,12 +41,12 @@ $mysqli = new mysqli("localhost", "root");
 		$result = mysqli_query($mysqli, $query);
 	
 		$fp = fopen('../dataFiles/file.csv', 'w');
-	
+
 		//For our d3 we use a csv style of label,count for the pie chart
 		$csvline = "label,count" . PHP_EOL;
 		fwrite($fp, $csvline);
 		while ($row = mysqli_fetch_array($result)){
-			$csvline = $row['school'] . "," . $row['COUNT(pkey)']  . PHP_EOL;
+			$csvline = $row['school'] . "," . $row['COUNT(s.pkey)']  . PHP_EOL;
 			fwrite($fp, $csvline);
 		}
 		fclose($fp);
@@ -62,7 +62,7 @@ $mysqli = new mysqli("localhost", "root");
 		$csvline = "label,count" . PHP_EOL;
 		fwrite($fp, $csvline);
 		while ($row = mysqli_fetch_array($result)){
-			$csvline = $row['level'] . "," . $row['COUNT(pkey)']  . PHP_EOL;
+			$csvline = $row['level'] . "," . $row['COUNT(s.pkey)']  . PHP_EOL;
 			fwrite($fp, $csvline);
 		} 
 		fclose($fp);
