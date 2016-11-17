@@ -14,14 +14,18 @@ $(document).ready(function(){
             cache: false,
             data: dataString,   
             success: function(result){
+                alert(result);
             generateGraph();
             }
         });
     }
     return false;
     });
+});
 
-    generateGraph(d3){
+function generateGraph(){
+
+(function(d3) {
         'use strict';
         var width = 360;
         var height = 360;
@@ -134,7 +138,5 @@ $(document).ready(function(){
             .attr('y', legendRectSize - legendSpacing)
             .text(function(d) { return d; });
         });
-      (window.d3);
-
-    }
-});
+      })(window.d3);
+  };
