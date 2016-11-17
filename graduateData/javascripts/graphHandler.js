@@ -13,9 +13,14 @@ $(document).ready(function(){
             url: "../php/graphHandler.php",
             cache: false,
             data: dataString,   
-            success: function(result){
-                alert(result);
-            generateGraph();
+            success: function(){
+                if ( $("svg").length == 0 ){
+                    generateGraph();    
+                } else {
+                    d3.select("svg").remove();
+                    generateGraph();
+                }
+            
             }
         });
     }
