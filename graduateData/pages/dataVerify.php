@@ -4,11 +4,10 @@
       <title>Graduate Outcome Data Processing</title>
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  <?php include('sqlstuff.php');?>
+  <?php include('../php/sqlstuff.php');?>
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -22,7 +21,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-              <a type="link" class="btn btn-primary" href="../index.html" role="button">Home</a>
+              <a type="link" class="btn btn-primary" href="landingPage.html" role="button">Home</a>
               <a type="link" class="btn btn-primary" href="dataVerify.php" role="button">Data Editing</a>
               <a type="link" class="btn btn-primary" href="#" role="button">Dashboard</a>
               <a type="link" class="btn btn-primary" href="graphGeneration.html" role="button">Graph Generation</a>
@@ -37,7 +36,6 @@
         <h1>Welcome to GODP</h1>
         <h3>Data Editing and Verification</h3>
       </div>
-      <?php print_r($_POST); ?>
     </div>
     <!--Real Body Begins -->
 
