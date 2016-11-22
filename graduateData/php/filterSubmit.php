@@ -37,9 +37,12 @@ if ($review2=="''" || $review2=="undefined" || $review2=="All"){
 $query = "call getstudentdata(". $school2 . ", " . $campus2 . ", " . $level2 . ", null, " . $approved2 . ", ". $review2 . ", null, null )";
 
 $result = mysqli_query($mysqli, $query);
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-echo $row[1];
+while($row = $result->fetch_assoc()){
+	echo $row['username'] . '<br />';
+	echo $result->num_rows;
+}
+
 /*echo "school = " . $school2 . " campus = " . $campus2 . " level = " . $level2 . " approved = " . $approved2 . " review = " . $review2 . "</br>" . $row; */
 
 mysqli_close($mysqli); // Connection Closed
