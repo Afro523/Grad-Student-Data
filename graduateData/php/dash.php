@@ -12,12 +12,19 @@ function getBachelors(){
     echo "no db";
     }
     
-    $query = "SELECT * FROM 'student' WHERE LEVEL = 'Undergradu'";
+    $query = "call getUndergrads()";
     $result = $mysqli->query($query);
 
-    while ($output = $result->fetch_array()) {
-    echo "<li><a type=\"button\" class=\"btn\"> " . $result . "</a></li>";
+    while ($row = $result->fetch_array()) {
+        $rows[] = $row;
     }
+    echo "HI!";
+
     
+    $fp = fopen('../dataFiles/jsonFile.json', 'w');
+    fwrite($fp, json_encode($rows));
+    fclose($fp);
+    
+    mysqli_close($mysqli);
 }
 ?>

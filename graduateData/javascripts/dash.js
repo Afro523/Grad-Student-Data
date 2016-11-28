@@ -1,27 +1,32 @@
 $(document).ready(function(){
-    $("#submit").click(function(){
-    var schoolSelect = $("#schoolDrop").val();
-    var campusSelect = $("#campusDrop").val();
-    var levelSelect = $("#levelDrop").val();
-    var approvedSelect = $("#approvedDrop").val();
-    var reviewedSelect = $("#reviewedDrop").val();
 
-    // Returns successful data submission message when the entered information is stored in database.
-    var dataString = 'school1='+ schoolSelect + '&campus1='+ campusSelect + '&level1='+ levelSelect + '&approved1='+ approvedSelect + '&review1=' + reviewedSelect;
-        if(schoolSelect=='' && campusSelect=='' && levelSelect=='' && verifySelect==''&& reviewedSelect==''){
-            alert("No Filter Selected");
-        }   else {
-            // AJAX Code To Submit Form.
-            $.ajax({
+    //On document ready create event listener
+    $("#submit").click(function(){
+        $.ajax({
             type: "POST",
             url: "../php/dash.php",
             cache: false,
-            data: dataString,   
-            success: function(result){
-            alert(result);
+            data: {action: 'getBachelors'},
+            error: function(xhr, status, error) {
+            alert(status);
+            alert(xhr.responseText);
+        },
+            success: function(results){
+            alert(results);
             }
         });
-    }
     return false;
     });
+    
+
+    $("#bachExpand").click(function(){
+        $('.drill').collapse('toggle');
+    });
+
+    $("#healthExpand").click(function(){
+        $('.drill2').collapse('toggle');
+    });
+
 });
+
+
