@@ -1,5 +1,6 @@
 <?php
-function getBachelors(){
+header("Content-type: text/javascript");
+
     $mysqli = new mysqli("localhost", "root");
     $databaseSelect = 'graduateoutcomes';
     if ($mysqli->connect_errno) {
@@ -12,19 +13,19 @@ function getBachelors(){
     echo "no db";
     }
     
-    $query = "call getUndergrads()";
+    $query = "SELECT * FROM `student` ";
+
+    //$query = "call getUndergrads()";
     $result = $mysqli->query($query);
 
     while ($row = $result->fetch_array()) {
         $rows[] = $row;
     }
-    echo "HI!";
 
     
     $fp = fopen('../dataFiles/jsonFile.json', 'w');
-    fwrite($fp, json_encode($rows));
+    fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
     fclose($fp);
-    
+    echo json_encode($rows);
     mysqli_close($mysqli);
-}
 ?>

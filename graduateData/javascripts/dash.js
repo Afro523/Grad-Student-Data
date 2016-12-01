@@ -2,18 +2,13 @@ $(document).ready(function(){
 
     //On document ready create event listener
     $("#submit").click(function(){
-        $.ajax({
-            type: "POST",
-            url: "../php/dash.php",
-            cache: false,
-            data: {action: 'getBachelors'},
-            error: function(xhr, status, error) {
-            alert(status);
-            alert(xhr.responseText);
-        },
-            success: function(results){
-            alert(results);
-            }
+        var studentTotal = 0;
+        $.getJSON('../php/dash.php', function(data){
+            $.each(data, function(key, val){
+                //$('#output').append('<td id="' + key +'">'+val.lastname + ', '+ val.firstname +'</td>');
+                studentTotal++;
+            });
+            $("#studentTotal").append(studentTotal);
         });
     return false;
     });
@@ -21,6 +16,7 @@ $(document).ready(function(){
 
     $("#bachExpand").click(function(){
         $('.drill').collapse('toggle');
+
     });
 
     $("#healthExpand").click(function(){

@@ -62,9 +62,9 @@
           </tr>
         </thead>
         <!-- Fill in with data -->
-          <tbody id="output">
+          <tbody>
             <th><button id="bachExpand"><span class="glyphicon glyphicon-plus"></span></button> Bachelors</th>
-            <td></td>
+            <td id="output"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -296,13 +296,13 @@
         <thead>
           <tr class="info">
             <th>Grand Total</th>
-            <th id="">EmpFT Total</th>
+            <th>EmpFT Total</th>
             <th>Rate %</th>
             <th>EmpPT Total</th>
             <th>Rate %</th>
-            <th>ContEdEnrolled Total</th>
+            <th>ContEd Enrolled Total</th>
             <th>Rate %</th>
-            <th>ContEdPlanning Total</th>
+            <th>ContEd Planning Total</th>
             <th>Rate %</th>
             <th>Military Total</th>
             <th>Rate %</th>
@@ -312,13 +312,12 @@
             <th>Rate %</th>
             <th>NotSeeking Total</th>
             <th>Rate %</th>
-            <th>Total Students</th>
+            <th id="studentTotal" >Total Students </th>
             <th>Total %</th>
           </tr>
       </table>
       <button id="submit">GO</button>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../javascripts/dash.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
