@@ -1,5 +1,5 @@
 <?php
-header("Content-type: text/javascript");
+    header("Content-type: text/javascript");
 
     $mysqli = new mysqli("localhost", "root");
     $databaseSelect = 'graduateoutcomes';
@@ -13,9 +13,9 @@ header("Content-type: text/javascript");
     echo "no db";
     }
     
-    $query = "SELECT * FROM `dashboarddata` ";
+    $query = "SELECT DISTINCT `major` FROM `studentdata` WHERE `school` = 'College of Health Professions'";
 
-    //$query = "call getUndergrads()";
+    
     $result = $mysqli->query($query);
 
     while ($row = $result->fetch_array()) {
@@ -23,7 +23,7 @@ header("Content-type: text/javascript");
     }
 
     
-    $fp = fopen('../dataFiles/jsonFile.json', 'w');
+    $fp = fopen('../../dataFiles/jsonFile.json', 'w');
     fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
     fclose($fp);
     echo json_encode($rows);

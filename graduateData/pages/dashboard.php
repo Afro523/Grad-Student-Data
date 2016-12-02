@@ -104,8 +104,8 @@
             <td></td>
             <td></td>
           </tbody>
-          <tbody id="" class="drill2 collapse">
-            <th><button><span id="campusExpand" class="glyphicon glyphicon-plus"></span></button>New York</th>
+          <tbody id="nyHealthBody" class="drill2 collapse">
+            <th><button><span id="nyHealthExpand" class="glyphicon glyphicon-plus"></span></button>New York</th>
             <td></td>
             <td></td>
             <td></td>
@@ -125,8 +125,9 @@
             <td></td>
             <td></td>
           </tbody>
-          <tbody id="" class="drill2 collapse">
-            <th><button><span id="campusExpand" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th>
+          
+          <tbody id="pvHealthBody" class="drill2 collapse">
+            <th><button><span id="pvHealthExpand" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th>
             <td></td>
             <td></td>
             <td></td>
@@ -145,6 +146,9 @@
             <td></td>
             <td></td>
             <td></td>
+          </tbody>
+          <tbody id="healthPvBody" class="drill3 collapse in">
+            
           </tbody>
           <tbody id="" class="drill collapse">
             <th><button><span id="dysonExpand" class="glyphicon glyphicon-plus"></span></button>Dyson College Arts & Sciences </th>
@@ -318,6 +322,7 @@
       </table>
       <button id="submit">GO</button>
     </div>
+    <div id="test"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../javascripts/dash.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
