@@ -8,7 +8,7 @@ $(document).ready(function(){
         var studentTotal = 0;
         $.getJSON('../php/dash.php', function(data){
             $.each(data, function(key, val){
-                //$('#output').append('<td id="' + key +'">'+val.lastname + ', '+ val.firstname +'</td>');
+                $('#output').append('<td id="' + key +'">'+val.lastname + ', '+ val.firstname +'</td>');
                 studentTotal++;
             });
             $("#studentTotal").append(studentTotal);

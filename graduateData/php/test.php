@@ -13,7 +13,7 @@
     echo "no db";
     }
     
-    $query = "SELECT DISTINCT `major` FROM `studentdata` WHERE `school` = 'Dyson College Arts & Sciences'";
+    $query = "SELECT * FROM `dashboarddata`";
 
     
     $result = $mysqli->query($query);
@@ -23,5 +23,8 @@
     }
 
     echo json_encode($rows);
+    $fp = fopen('../dataFiles/jsonFile.json', 'w');
+    fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
+    fclose($fp);
     mysqli_close($mysqli);
 ?>

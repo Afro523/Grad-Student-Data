@@ -22,10 +22,6 @@
         $rows[] = $row;
     }
 
-    
-    $fp = fopen('../../dataFiles/jsonFile.json', 'w');
-    fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
-    fclose($fp);
     echo json_encode($rows);
     mysqli_close($mysqli);
 ?>
