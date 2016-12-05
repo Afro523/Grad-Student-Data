@@ -23,8 +23,8 @@
     }
 
     echo json_encode($rows);
-    $fp = fopen('../dataFiles/jsonFile.json', 'w');
-    fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
-    fclose($fp);
+    //$fp = fopen('../dataFiles/jsonFile.json', 'w');
+    //fwrite($fp, json_encode($rows, JSON_PRETTY_PRINT));
+    //fclose($fp);
     mysqli_close($mysqli);
 ?>

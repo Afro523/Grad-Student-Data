@@ -18,3 +18,7 @@ tbody.drill2 th{
 tbody.drill3 th{
 	padding-left: 6% !important;
 }
+
+#openButton{
+	margin-right: 5px;
+}
