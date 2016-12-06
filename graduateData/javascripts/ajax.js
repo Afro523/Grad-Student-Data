@@ -19,9 +19,13 @@ $(document).ready(function(){
             data: dataString,   
             success: function(result){
             alert(result);
-            }
-        });
-    }
-    return false;
+            },
+            error: function(jqXHR, textStatus){ 
+                console.log("FAIL");
+                console.log("error " + textStatus);
+                console.log("incoming Text " + jqXHR.responseText);
+                }
+            });
+        }
     });
 });
