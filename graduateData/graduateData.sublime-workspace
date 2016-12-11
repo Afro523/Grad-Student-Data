@@ -168,66 +168,35 @@
 	"buffers":
 	[
 		{
-			"file": "dataFiles/jsonFile.json",
+			"file": "javascripts/ajax.js",
 			"settings":
 			{
-				"buffer_size": 23800,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pages/dashboard.php",
-			"settings":
-			{
-				"buffer_size": 10250,
+				"buffer_size": 1285,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pages/dash2.html",
+			"file": "pages/dataVerify.php",
 			"settings":
 			{
-				"buffer_size": 3600,
-				"encoding": "UTF-8",
+				"buffer_size": 9352,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "php/test.php",
+			"file": "php/sqlstuff.php",
 			"settings":
 			{
-				"buffer_size": 742,
-				"encoding": "UTF-8",
+				"buffer_size": 9846,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "javascripts/dash.js",
+			"file": "php/filterSubmit.php",
 			"settings":
 			{
-				"buffer_size": 3559,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "javascripts/test.js",
-			"settings":
-			{
-				"buffer_size": 6956,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "test.js"
-			}
-		},
-		{
-			"file": "stylesheets/dashStyles.css",
-			"settings":
-			{
-				"buffer_size": 261,
-				"encoding": "UTF-8",
+				"buffer_size": 1480,
 				"line_ending": "Windows"
 			}
 		}
@@ -277,6 +246,14 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dataVerify.html",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/dataFiles/jsonFile.json",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/test.php",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/stylesheets/dashStyles.css",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/dash.js",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dashboard.php",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/test.js",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dash2.html",
 		"/C/Users/JewFro/Documents/Grad School/UDK/UDK-2015-01/Development/Src/AwesomeGame/Classes/AwesomePlayerController.uc",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/microServices/dysonMajors.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/phpGrid_Lite/conf.php",
@@ -403,117 +380,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "dataFiles/jsonFile.json",
+					"file": "javascripts/ajax.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23800,
+						"buffer_size": 1285,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								538,
-								538
+								1008,
+								1008
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pages/dashboard.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3981,
-								3981
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1274.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pages/dash2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3600,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2849,
-								2849
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 654.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "php/test.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -521,7 +410,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/dataVerify.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								9352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3990.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -531,93 +450,62 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
-					"file": "javascripts/dash.js",
+					"buffer": 2,
+					"file": "php/sqlstuff.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3559,
+						"buffer_size": 9846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								872,
+								872
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "javascripts/test.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6956,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								699,
-								699
-							]
-						],
-						"settings":
-						{
-							"auto_name": "test.js",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2016.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "stylesheets/dashStyles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "php/filterSubmit.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -651,7 +539,7 @@
 		"cols":
 		[
 			0.0,
-			0.448728746477,
+			0.528537206174,
 			1.0
 		],
 		"rows":
@@ -710,7 +598,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":

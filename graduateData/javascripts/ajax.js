@@ -18,7 +18,7 @@ $(document).ready(function(){
             cache: false,
             data: dataString,   
             success: function(result){
-            alert(result);
+            console.log("Success");
             },
             error: function(jqXHR, textStatus){ 
                 console.log("FAIL");
