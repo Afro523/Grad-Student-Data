@@ -4,6 +4,110 @@
 		"selected_items":
 		[
 			[
+				"phdNy",
+				"phdNyMajorCount"
+			],
+			[
+				"ms",
+				"msPv"
+			],
+			[
+				"toggle",
+				"Toggle"
+			],
+			[
+				"th",
+				"th"
+			],
+			[
+				"emp",
+				"empPT"
+			],
+			[
+				"em",
+				"empFT"
+			],
+			[
+				"contE",
+				"contEdEn"
+			],
+			[
+				"cont",
+				"contEdEn"
+			],
+			[
+				"contEd",
+				"contEdPl"
+			],
+			[
+				"con",
+				"contEdPl"
+			],
+			[
+				"major",
+				"majorRow"
+			],
+			[
+				"bsPv",
+				"bsPvSum"
+			],
+			[
+				"total",
+				"total"
+			],
+			[
+				"Em",
+				"EmpFT"
+			],
+			[
+				"e",
+				"empFT"
+			],
+			[
+				"temp",
+				"tempEmpFt"
+			],
+			[
+				"mao",
+				"majorRow"
+			],
+			[
+				"Co",
+				"ContEdPlanning"
+			],
+			[
+				"clean",
+				"cleanNum"
+			],
+			[
+				"Grad",
+				"Graduates"
+			],
+			[
+				"gr",
+				"Graduates"
+			],
+			[
+				"Gradu",
+				"Graduate"
+			],
+			[
+				"majors",
+				"majorRows"
+			],
+			[
+				"se",
+				"Seeking"
+			],
+			[
+				"co",
+				"ContEdEnrolled"
+			],
+			[
+				"bs",
+				"bsOpenButton"
+			],
+			[
 				"t",
 				"tbody"
 			],
@@ -58,10 +162,6 @@
 			[
 				"json",
 				"json_encode"
-			],
-			[
-				"th",
-				"th\tTag"
 			],
 			[
 				"di",
@@ -168,35 +268,46 @@
 	"buffers":
 	[
 		{
-			"file": "javascripts/ajax.js",
+			"file": "pages/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 1285,
+				"buffer_size": 3457,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pages/dataVerify.php",
+			"file": "dataFiles/jsonFile.json",
 			"settings":
 			{
-				"buffer_size": 9352,
+				"buffer_size": 23198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/test.php",
+			"settings":
+			{
+				"buffer_size": 736,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "php/sqlstuff.php",
+			"file": "stylesheets/dashStyles.css",
 			"settings":
 			{
-				"buffer_size": 9846,
+				"buffer_size": 261,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "php/filterSubmit.php",
+			"file": "javascripts/dash.js",
 			"settings":
 			{
-				"buffer_size": 1480,
+				"buffer_size": 20069,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -239,6 +350,7 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/dataFiles",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php",
@@ -246,6 +358,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/JewFro/Downloads/graduateoutcomes (5).sql",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/index.html",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/graphGeneration.html",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dataVerify.php",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/ajax.js",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/sqlstuff.php",
+		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/filterSubmit.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dataVerify.html",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/dataFiles/jsonFile.json",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/test.php",
@@ -264,18 +383,13 @@
 		"/C/Users/JewFro/Downloads/graduateoutcomes (7).sql",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/phpGrid_Lite/examples/data_filter.php",
 		"/C/Users/JewFro/Downloads/download",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/ajax.js",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/dataVerify.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/index.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/graphHandler.js",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/graphHandler.php",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/graphGeneration.html",
 		"/C/Users/JewFro/Downloads/HHOTR (1)/HHOTR/Docs/todo.txt",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/php/filterSubmit.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/register.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/landingPage.html",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/sqlstuff.php",
-		"/C/xampp/htdocs/Grad-Student-Data/graduateData/index.html",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/pages/graphGeneration.php",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/javascripts/ddtest.js",
 		"/C/xampp/htdocs/Grad-Student-Data/graduateData/reg.php",
@@ -349,6 +463,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ms",
+			"bs",
+			"mspv",
+			"White Plains",
+			"ms",
+			";\n",
+			"bs",
+			"Pv",
+			"bs",
+			"ms",
+			"bs",
+			"12",
+			"communication",
+			"ms",
+			"ug",
+			"bs",
+			"white",
+			"val",
 			"= 0;",
 			"totalStud",
 			"latestoutcome",
@@ -385,19 +517,143 @@
 			[
 				{
 					"buffer": 0,
-					"file": "javascripts/ajax.js",
+					"file": "pages/dashboard.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1285,
+						"buffer_size": 3457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1008,
-								1008
+								2604,
+								2606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 730.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dataFiles/jsonFile.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "php/test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "stylesheets/dashStyles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "javascripts/dash.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16490,
+								16490
 							]
 						],
 						"settings":
@@ -407,105 +663,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3404.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pages/dataVerify.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								9352
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3990.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "php/sqlstuff.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9846,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								872,
-								872
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "php/filterSubmit.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1480,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								975,
-								975
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -513,7 +674,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 21.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -539,7 +700,7 @@
 		"cols":
 		[
 			0.0,
-			0.528537206174,
+			0.540607893169,
 			1.0
 		],
 		"rows":
@@ -557,7 +718,7 @@
 	"project": "graduateData.sublime-project",
 	"replace":
 	{
-		"height": 38.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -598,7 +759,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":

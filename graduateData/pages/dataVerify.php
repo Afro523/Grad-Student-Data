@@ -21,9 +21,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-              <a type="link" class="btn btn-primary" href="landingPage.html" role="button">Home</a>
+              <a type="link" class="btn btn-primary" href="../index.html" role="button">Home</a>
               <a type="link" class="btn btn-primary" href="dataVerify.php" role="button">Data Editing</a>
-              <a type="link" class="btn btn-primary" href="#" role="button">Dashboard</a>
+              <a type="link" class="btn btn-primary" href="dashboard.html" role="button">Dashboard</a>
               <a type="link" class="btn btn-primary" href="graphGeneration.html" role="button">Graph Generation</a>
           </form>
         </div><!--/.navbar-collapse -->
