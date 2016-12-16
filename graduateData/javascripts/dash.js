@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$.ajax({
+    $.ajax({
         type: 'POST',
         url: '../php/test.php',
         dataType: 'json',
@@ -16,8 +16,7 @@ $.ajax({
             console.log("error " + textStatus);
             console.log("incoming Text " + jqXHR.responseText);
         }
-    });
-    
+    });    
 });
 
 //Couple globals to make my life easier
@@ -193,14 +192,14 @@ function createSumData(majorRows){
     $('#msInsertAfter').after('<td> '+ msSum.empFT +' </td><td>'+makePercent(msSum.empFT, msSum.total)+'<td> '+ msSum.empPT +' </td> <td>'+makePercent(msSum.empPT, msSum.total)+'<td> '+msSum.contEdEn+'</td><td>'+makePercent(msSum.contEdEn, msSum.total)+'</td><td>'+msSum.contEdPl+'</td><td>'+makePercent(msSum.contEdPl, msSum.total)+'</td><td>'+msSum.seek+'</td><td>'+makePercent(msSum.seek,msSum.total)+'</td><td>'+msSum.total+'</td>');
     $('#phdInsertAfter').after('<td> '+ phdSum.empFT +' </td><td>'+makePercent(phdSum.empFT, phdSum.total)+'<td> '+ phdSum.empPT +' </td> <td>'+makePercent(phdSum.empPT, phdSum.total)+'<td> '+phdSum.contEdEn+'</td><td>'+makePercent(phdSum.contEdEn, phdSum.total)+'</td><td>'+phdSum.contEdPl+'</td><td>'+makePercent(phdSum.contEdPl, phdSum.total)+'</td><td>'+phdSum.seek+'</td><td>'+makePercent(phdSum.seek,phdSum.total)+'</td><td>'+phdSum.total+'</td>');
     
-    $('#bachBody').after('<tbody id="bsPv" class="collapse drill"><th><button id="bsPv" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ bsPvSum.empFT +' </td><td>'+makePercent(bsPvSum.empFT, bsPvSum.total)+'<td> '+ bsPvSum.empPT +' </td> <td>'+makePercent(bsPvSum.empPT, bsPvSum.empPT)+'<td> '+bsPvSum.contEdEn+'</td><td>'+makePercent(bsPvSum.contEdEn, bsPvSum.total)+'</td><td>'+bsPvSum.contEdPl+'</td><td>'+makePercent(bsPvSum.contEdPl, bsPvSum.total)+'</td><td>'+bsPvSum.seek+'</td><td>'+makePercent(bsPvSum.seek, bsPvSum.total)+'</td><td>'+bsPvSum.total+'</td></tbody>');
-    $('#bachBody').after('<tbody id="bsNy" class="collapse drill"><th><button id="bsNy" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ bsNySum.empFT +' </td><td>'+makePercent(bsNySum.empFT, bsNySum.total)+'<td> '+ bsNySum.empPT +' </td> <td>'+makePercent(bsNySum.empPT, bsNySum.empPT)+'<td> '+bsNySum.contEdEn+'</td><td>'+makePercent(bsNySum.contEdEn, bsNySum.total)+'</td><td>'+bsNySum.contEdPl+'</td><td>'+makePercent(bsNySum.contEdPl, bsNySum.total)+'</td><td>'+bsNySum.seek+'</td><td>'+makePercent(bsNySum.seek, bsNySum.total)+'</td><td>'+bsNySum.total+'</td></tbody>');
+    $('#bachBody').after('<tbody id="bsPv" class="collapse drill"><th><button id="bsPvButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ bsPvSum.empFT +' </td><td>'+makePercent(bsPvSum.empFT, bsPvSum.total)+'<td> '+ bsPvSum.empPT +' </td> <td>'+makePercent(bsPvSum.empPT, bsPvSum.empPT)+'<td> '+bsPvSum.contEdEn+'</td><td>'+makePercent(bsPvSum.contEdEn, bsPvSum.total)+'</td><td>'+bsPvSum.contEdPl+'</td><td>'+makePercent(bsPvSum.contEdPl, bsPvSum.total)+'</td><td>'+bsPvSum.seek+'</td><td>'+makePercent(bsPvSum.seek, bsPvSum.total)+'</td><td>'+bsPvSum.total+'</td></tbody>');
+    $('#bachBody').after('<tbody id="bsNy" class="collapse drill"><th><button id="bsNyButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ bsNySum.empFT +' </td><td>'+makePercent(bsNySum.empFT, bsNySum.total)+'<td> '+ bsNySum.empPT +' </td> <td>'+makePercent(bsNySum.empPT, bsNySum.empPT)+'<td> '+bsNySum.contEdEn+'</td><td>'+makePercent(bsNySum.contEdEn, bsNySum.total)+'</td><td>'+bsNySum.contEdPl+'</td><td>'+makePercent(bsNySum.contEdPl, bsNySum.total)+'</td><td>'+bsNySum.seek+'</td><td>'+makePercent(bsNySum.seek, bsNySum.total)+'</td><td>'+bsNySum.total+'</td></tbody>');
 
-    $('#msBody').after('<tbody id="msPV" class="collapse drill"><th><button id="msPv" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ msPvSum.empFT +' </td><td>'+makePercent(msPvSum.empFT, msPvSum.total)+'<td> '+ msPvSum.empPT +' </td> <td>'+makePercent(msPvSum.empPT, msPvSum.empPT)+'<td> '+msPvSum.contEdEn+'</td><td>'+makePercent(msPvSum.contEdEn, msPvSum.total)+'</td><td>'+msPvSum.contEdPl+'</td><td>'+makePercent(msPvSum.contEdPl, msPvSum.total)+'</td><td>'+msPvSum.seek+'</td><td>'+makePercent(msPvSum.seek, msPvSum.total)+'</td><td>'+msPvSum.total+'</td></tbody>');
-    $('#msBody').after('<tbody id="msNy" class="collapse drill"><th><button id="msNy" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ msNySum.empFT +' </td><td>'+makePercent(msNySum.empFT, msNySum.total)+'<td> '+ msNySum.empPT +' </td> <td>'+makePercent(msNySum.empPT, msNySum.empPT)+'<td> '+msNySum.contEdEn+'</td><td>'+makePercent(msNySum.contEdEn, msNySum.total)+'</td><td>'+msNySum.contEdPl+'</td><td>'+makePercent(msNySum.contEdPl, msNySum.total)+'</td><td>'+msNySum.seek+'</td><td>'+makePercent(msNySum.seek, msNySum.total)+'</td><td>'+msNySum.total+'</td></tbody>');
+    $('#msBody').after('<tbody id="msPv" class="collapse drill"><th><button id="msPvButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ msPvSum.empFT +' </td><td>'+makePercent(msPvSum.empFT, msPvSum.total)+'<td> '+ msPvSum.empPT +' </td> <td>'+makePercent(msPvSum.empPT, msPvSum.empPT)+'<td> '+msPvSum.contEdEn+'</td><td>'+makePercent(msPvSum.contEdEn, msPvSum.total)+'</td><td>'+msPvSum.contEdPl+'</td><td>'+makePercent(msPvSum.contEdPl, msPvSum.total)+'</td><td>'+msPvSum.seek+'</td><td>'+makePercent(msPvSum.seek, msPvSum.total)+'</td><td>'+msPvSum.total+'</td></tbody>');
+    $('#msBody').after('<tbody id="msNy" class="collapse drill"><th><button id="msNyButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ msNySum.empFT +' </td><td>'+makePercent(msNySum.empFT, msNySum.total)+'<td> '+ msNySum.empPT +' </td> <td>'+makePercent(msNySum.empPT, msNySum.empPT)+'<td> '+msNySum.contEdEn+'</td><td>'+makePercent(msNySum.contEdEn, msNySum.total)+'</td><td>'+msNySum.contEdPl+'</td><td>'+makePercent(msNySum.contEdPl, msNySum.total)+'</td><td>'+msNySum.seek+'</td><td>'+makePercent(msNySum.seek, msNySum.total)+'</td><td>'+msNySum.total+'</td></tbody>');
 
-    $('#phdBody').after('<tbody id="phdPv" class="collapse drill"><th><button id="phdPv" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ phdPvSum.empFT +' </td><td>'+makePercent(phdPvSum.empFT, phdPvSum.total)+'<td> '+ phdPvSum.empPT +' </td> <td>'+makePercent(phdPvSum.empPT, phdPvSum.empPT)+'<td> '+phdPvSum.contEdEn+'</td><td>'+makePercent(phdPvSum.contEdEn, phdPvSum.total)+'</td><td>'+phdPvSum.contEdPl+'</td><td>'+makePercent(phdPvSum.contEdPl, phdPvSum.total)+'</td><td>'+phdPvSum.seek+'</td><td>'+makePercent(phdPvSum.seek, phdPvSum.total)+'</td><td>'+phdPvSum.total+'</td></tbody>');
-    $('#phdBody').after('<tbody id="phdNy" class="collapse drill"><th><button id="phdNy" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ phdNySum.empFT +' </td><td>'+makePercent(phdNySum.empFT, phdNySum.total)+'<td> '+ phdNySum.empPT +' </td> <td>'+makePercent(phdNySum.empPT, phdNySum.empPT)+'<td> '+phdNySum.contEdEn+'</td><td>'+makePercent(phdNySum.contEdEn, phdNySum.total)+'</td><td>'+phdNySum.contEdPl+'</td><td>'+makePercent(phdNySum.contEdPl, phdNySum.total)+'</td><td>'+phdNySum.seek+'</td><td>'+makePercent(phdNySum.seek, phdNySum.total)+'</td><td>'+phdNySum.total+'</td></tbody>');
+    $('#phdBody').after('<tbody id="phdPv" class="collapse drill"><th><button id="phdPvButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>Pleasantville</th> <td>'+ phdPvSum.empFT +' </td><td>'+makePercent(phdPvSum.empFT, phdPvSum.total)+'<td> '+ phdPvSum.empPT +' </td> <td>'+makePercent(phdPvSum.empPT, phdPvSum.empPT)+'<td> '+phdPvSum.contEdEn+'</td><td>'+makePercent(phdPvSum.contEdEn, phdPvSum.total)+'</td><td>'+phdPvSum.contEdPl+'</td><td>'+makePercent(phdPvSum.contEdPl, phdPvSum.total)+'</td><td>'+phdPvSum.seek+'</td><td>'+makePercent(phdPvSum.seek, phdPvSum.total)+'</td><td>'+phdPvSum.total+'</td></tbody>');
+    $('#phdBody').after('<tbody id="phdNy" class="collapse drill"><th><button id="phdNyButton" class="accordionButton"><span id="" class="glyphicon glyphicon-plus"></span></button>New York City</th> <td>'+ phdNySum.empFT +' </td><td>'+makePercent(phdNySum.empFT, phdNySum.total)+'<td> '+ phdNySum.empPT +' </td> <td>'+makePercent(phdNySum.empPT, phdNySum.empPT)+'<td> '+phdNySum.contEdEn+'</td><td>'+makePercent(phdNySum.contEdEn, phdNySum.total)+'</td><td>'+phdNySum.contEdPl+'</td><td>'+makePercent(phdNySum.contEdPl, phdNySum.total)+'</td><td>'+phdNySum.seek+'</td><td>'+makePercent(phdNySum.seek, phdNySum.total)+'</td><td>'+phdNySum.total+'</td></tbody>');
 
     $('#grandTotals').append('<tr class="info"><th>Grand Totals</th><th>'+ totalSum.empFT +'</th><th>'+ makePercent(totalSum.empFT, totalSum.total) +'</th><th> '+ totalSum.empPT +' </th><th> '+ makePercent(totalSum.empPT,totalSum.total) +' </th><th> '+totalSum.contEdEn+' </th><th> '+ makePercent(totalSum.contEdEn, totalSum.total) +'</th><th> '+totalSum.contEdPl+' </th><th> '+makePercent(totalSum.contEdPl, totalSum.total)+' </th><th> '+totalSum.seek+' </th><th> '+makePercent(totalSum.seek, totalSum.total)+'</th><th>'+totalSum.total+'</th></tr></tbody>');
 
@@ -218,6 +217,7 @@ function createSumData(majorRows){
             break;
 
             case "Graduate":
+
                 if(val.campus == "New York City"){
                     $('#msNy').after('<tbody id="msNy'+msNyMajorCount+'" class="collapse drill2"><th>'+val.major+'</th><td>'+ val.empFT +' </td><td>'+makePercent(val.empFT, val.total)+'<td> '+ val.empPT +' </td> <td>'+makePercent(val.empPT, val.total)+'<td> '+val.contEdEn+'</td><td>'+makePercent(val.contEdEn, val.total)+'</td><td>'+val.contEdPl+'</td><td>'+makePercent(val.contEdPl, val.total)+'</td><td>'+val.seek+'</td><td>'+makePercent(val.seek, val.total)+'</td><td>'+val.total+'</td></tbody>');
                     msNyMajorCount += 1;
@@ -225,6 +225,7 @@ function createSumData(majorRows){
                     $('#msPv').after('<tbody id="msPv'+msPvMajorCount+'"class="collapse drill2"><th>'+val.major+'</th><td>'+ val.empFT +' </td><td>'+makePercent(val.empFT, val.total)+'<td> '+ val.empPT +' </td> <td>'+makePercent(val.empPT, val.total)+'<td> '+val.contEdEn+'</td><td>'+makePercent(val.contEdEn, val.total)+'</td><td>'+val.contEdPl+'</td><td>'+makePercent(val.contEdPl, val.total)+'</td><td>'+val.seek+'</td><td>'+makePercent(val.seek, val.total)+'</td><td>'+val.total+'</td></tbody>');
                     msPvMajorCount += 1;
                     }
+
             break;
 
             case "Undergradu":
@@ -315,37 +316,37 @@ function toggleAccordion(obj, $obj){
             }
         break;
 
-        case "phdNy":
+        case "phdNyButton":
             for (var i = 0; i < phdNyMajorCount; i++) {
                 $('#phdNy'+i).collapse('toggle');
             }
         break;
 
-        case "phdPv":
+        case "phdPvButton":
             for (var i = 0; i < phdPvMajorCount; i++) {
                 $('#phdPv'+i).collapse('toggle');
             }
         break;
 
-        case "msNy":
+        case "msNyButton":
             for (var i = 0; i < msNyMajorCount; i++) {
                 $('#msNy'+i).collapse('toggle');
             }
         break;
 
-        case "msPv":
+        case "msPvButton":
             for (var i = 0; i < msPvMajorCount; i++) {
                 $('#msPv'+i).collapse('toggle');
             }
         break;
 
-        case "bsNy":
+        case "bsNyButton":
             for (var i = 0; i < bsNyMajorCount; i++) {
                 $('#bsNy'+i).collapse('toggle');
             }
         break;
 
-        case "bsPv":
+        case "bsPvButton":
             for (var i = 0; i < bsPvMajorCount; i++) {
                 $('#bsPv'+i).collapse('toggle');
             }
@@ -368,7 +369,6 @@ function addToArray(val, array){
     if($.inArray(val,array) == -1){
         array.push(val);
     }
-    console.log(array);
 }
 
 function makePercent(intIn, total){
